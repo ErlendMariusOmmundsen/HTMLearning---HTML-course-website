@@ -1,0 +1,30 @@
+
+h1 {
+	font-family: Helvetica, Arial, Georgia;
+	color: olive;
+}
+h2 {
+	font-family: Helvetica, Arial, Georgia;
+	font-size: 28px;
+	color: olive;
+}
+h3 {
+	font-family: Helvetica, Arial, Georgia;
+	font-size: 22px;
+	color: olive;
+}
+body {
+	width: 60em;
+	background-color: lightpink;
+	margin: auto;
+}
+
+small{
+	font-family: Helvetica, Arial, Georgia;
+	color: olivedrab;
+}
+p, ol, li {
+	font-family: Helvetica, Arial, Georgia;
+	font-size: 18px;
+	color: olivedrab;
+}
