@@ -1,48 +1,79 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-	<link rel="stylesheet" href="css/style.css">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
     <title>Group 1 - requirements draft</title>
     <meta charset="UTF-8">
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Group 1 - requirements draft</h1>
     <small>by Martin Skurtveit, Joakim Fremstad, Erlend Marius Ommundsen, Lærke Svendsen
-      <br>Written 18.09.2018</small>
+        <br>Written 20.09.2018</small>
 
 
-    <h2>Client</h2>
-    <p>Company which offers HTML-courses: HTMLearning AS Ltd. GmbH.</p>
+    <h2>Choice of client</h2>
+    <p>For this project, we have chosen an imaginary client who wishes to create a website for the HTML-courses, and other courses, they offer here in Trondheim. The company HTMLearning, aims to promote and sell their courses through a website. They have requested a website with user registration and a plain design to make it easier for inexperienced users to navigate the site.
+    </p>
 
-    <h2>Purpose and Goals:</h2>
-    <p>The site wishes to inform users about upcoming courses, prices, and other details about the courses.</p>
+    <h2>Purpose and Goals</h2>
+    <p>The site shall inform users about upcoming courses, prices, and other details about the courses offered, in addition to making it possible to register to a course. In this way the company wishes to reach more of their user base, and make it easier to use their services. To goal is to increase the number of participants in the courses.<br />
+        As a second goal the company wishes to become more known, and improve their reputation. This is achieved by making the site easy to navigate, always available across devices.
+    </p>
 
 
-    <h2>Audience:</h2>
-    <p>Users interested in learning HTML, but also other web technologies.</p>
+    <h2>Audience</h2>
+    <p>The websites intended audience is people that want to learn HTML and additional web technologies, but mainly students and people who need it for work. They can be completely new to coding, or they can already have some experience. “HTMLearning” should cater to every level of coding skill. Since the user has different starting points when it comes to knowledge, they need detailed information about the courses that the site provides. One challenge with this audience is the wide variety of devices they use. This could prove challenging when trying to implement a consistent design.
+    </p>
+
+    <h2>Content of site</h2>
+    <p>The company wants to have a front page, with a short introduction to the website and HTML itself. They also want a menu to navigate to the rest of the site’s content, accessible from all parts of the website. From the menu bar, a user should be able to reach the most essentials part of the site: Front page, Courses overview, About the company, FAQ and Log in. The courses overview should be well-organized, to let the user easily separate the different types of courses. There should also be a part of the website that shows how to come in touch with the company.
+    </p>
 
 
     <h2>Requirements</h2>
     <h3>Functional requirements</h3>
     <ol>
-      <li>Navigation menu</li>
-      <li>FAQ site</li>
-      <ol>
-        <li>FAQ questions should only display the question, then when it is clicked the answer will be displayed under the question.</li>
-      </ol>
-    <li>Send mail to the company</li>
-    <li>Overview of all courses</li>
+        <li>(Very High priority)Navigation menu in the top of the page with links to: Front page, About us page, Courses overview page, Log in, FAQ.</li>
+        <li>(High Priority)The web page should contain an overview of all course types.
+            <ol>
+                <li>From here, the user should only be able to see essential info about pricing, course length, time and date etc.</li>
+                <li>Each course type should link to a page with more detailed descriptions of the coming courses of this type.</li>
+                <li>Detailed course description should include a small window with the course location in Google Maps.</li>
+            </ol>
+        </li>
+        <li>(Medium-High)Frequently Asked Questions site
+            <ol>
+                <li>(Low priority)FAQ questions should only display the question, then when it is clicked the answer will be displayed under the question.</li>
+            </ol>
+        </li>
+        <li>(Medium-High priority) Contacting information, preferably in the footnote.</li>
+        <li>(High priority) Users should be able to register for courses.
+            <ol>
+                <li>The registration form should output a success message after “registering”.</li>
+            </ol>
+        </li>
+        <li>(Medium priority) The navigation menu should contain a login button that takes the user to a (fake) profile page.</li>
+        <li>(Low priority) The user should be able see the course ratings and/or reviews and rate and/or review them themselves.</li>
+        <li>(Low priority) Under CSS courses: Demonstrate how a webpage looks without CSS.</li>
+        <li>(Medium priority) All pages should have a plus/minus to increase/decrease text size. (Refer to Non-functional req.3)</li>
     </ol>
 
 
     <h3>Non-functional requirement</h3>
     <ol>
-      <li>Every page must load in less than 1 second.</li>
-      <li>The user should be able to navigate the menu from all pages</li>
-      <li>All text should be readable</li>
+        <li>Every page should load in less than 1 second.</li>
+        <li>The user should be able to navigate the menu from all pages.</li>
+        <li>All text should be readable.</li>
+        <li>The web page should be easily usable on Android and IOS.</li>
+        <li>The page should be easily maintainable.</li>
+        <li>The page should comply with the GDPR regulations.</li>
+        <li>Availability: The page should update after one pushes to Github.</li>
     </ol>
 
     <h2>Final location</h2>
-    <p>https://www.htmlearning.academy/</p>
-  </body>
+    <p> <a href="https://folk.ntnu.no/joakif/webtek">https://folk.ntnu.no/joakif/webtek</a> </p>
+</body>
+
 </html>
