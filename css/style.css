@@ -1,15 +1,29 @@
+h1 {
+	font-family: 'Yeseva One', cursive;
+	color: #361A1E;
+}
+h2 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 28px;
+	color: #9A1750;
+}
+h3 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 22px;
+	color: #9A1750;
+}
 body {
-  width: 70%;
-  max-width: 1200px;
-  margin: auto;
-  background-color: #d8e9f3;
-	font-family: Helvetica, Arial, Georgia;
+	width: 60em;
+	background-color: #E3E2DF;
+	margin: auto;
 }
 
-small {
-  color: #737a84;
+small{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #000000;
 }
-
-a {
-  color: #1aff1a;
+p, ol, li {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	color: #000000;
 }
