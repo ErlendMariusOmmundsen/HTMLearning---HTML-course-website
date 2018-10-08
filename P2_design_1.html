@@ -34,29 +34,29 @@
     <p>The registration of a user is nested under the login page because the purpose of logging in is still the goal, and registration is something presumably only done once by each user.
     </p>
     <p>In the list below each root point can be accessed from the menu bar. As the menu bar is available on all pages, these pages will be accessible from all other pages. The children of these pages are accessible only from these pages. </p>
-    <ol>
+    <ul>
         <li>Front page</li>
         <li>Courses overview
-            <ol>
+            <ul>
                 <li>Detailed course description (a page for each course type)
-                    <ol>
+                    <ul>
                         <li>Link to the page of the lecturer of this course</li>
-                    </ol>
+                    </ul>
                 </li>
-            </ol>
+            </ul>
         </li>
         <li>Help/FAQ</li>
         <li>About us
-            <ol>
+            <ul>
                 <li>With a list of lecturers</li>
-            </ol>
+            </ul>
         </li>
         <li>Login
-            <ol>
+            <ul>
                 <li>Registration in login page</li>
-            </ol>
+            </ul>
         </li>
-    </ol>
+    </ul>
 
     <figure>
         <img src="img/SiteMap.png" alt="Sitemap">
@@ -66,10 +66,6 @@
         </figcaption>
     </figure>
     <p>The pages Lecturer and Detailed course description are not merely a single page, but many individual pages for each of the lecturers and courses offered from HTMLearning. The skeleton for these pages will be the same though, and only the content will be different.</p>
-
-    <h2>Page Layout and Appearance</h2>
-    <p>Logo/banner on top. Followed by the navigation bar and an option to change text size. The footer should include contact information and the location of the firm.
-    </p>
 
     <h2>Design and layout</h2>
     <p>The goal of the site will be to get as many course takers as possible. Our main focus when it comes to the design of the web page is therefore minimalism, ability to navigate with ease and user friendliness. We will try to to achieve this by having clear and contrasted colors, not having overcrowded pages and by hopefully having an intuitive layout. The navigation bar will always be visible, even when scrolling. By doing this, the user will always be able to go where it wants to go. These main pages will have sub pages where the user can obtain additional information. The target group of the site is people who want to learn HTML or need to learn it for work related reasons. Both young people and adults should be greeted with enough information to apply for a course. Our client requested that the logo also should be visible, along with the navigation bar, at all times. Visitors will hopefully, because of the logo, remember the name and brand. </p>
@@ -118,19 +114,26 @@
     <h2>Content</h2>
 
     <h2>Minimum Requirements</h2>
-    <ul>
-        <li>FAQ</li>
-        <li>Registration for a course</li>
-        <li>Registration as a user</li>
-        <li>Hamburger</li>
-        <li>Lightning course</li>
-    </ul>
+
+    <h3>FAQ (help.js)</h3>
+    <p>On the FAQ page we want the questions to be visible, but not the answers. However when the user clicks on a question, the answer should roll out under the question. When the user clicks the question again, the answer should roll back up and disappear.</p>
+
+    <h3>Registration for a course and as a user (registration.js and user.js)</h3>
+    <p>When a user registers for a course, a notification should appear confirming the registration.
+        The same should happen when a user registers a profile on the webpage.
+    </p>
+
+    <h3>Pre-tests for courses (quiz.js)</h3>
+    <p>A quiz to help users understand which course is the most appropriate given their previous knowledge. It will keep a total score during the quiz and at the end it will give the user an evaluation indicating if the course would be too easy, hard or just perfect.</p>
+
+    <h3>Dynamically load lecturer info (lecturer.js)</h3>
+    <p>We want to load the information about lecturers and courses from a JSON-file, in order to increase the maintainability of the webpage.</p>
 
     <h2>Plan</h2>
     <p>A good website requires a good structure, below is an overview of the files hierarchy, followed by a plan for each file with deadlines. Changes might occur and will be documented.
     </p>
 
-    <h3>Organizational scheme </h3>
+    <h3>File hierarchy</h3>
     <ul>
         <li>img/
             <ul>
@@ -164,7 +167,7 @@
         <li>navbar.html</li>
         <li>footer.html</li>
         <li>courses_overview.html</li>
-        <li>courses
+        <li>courses/
             <ul>
                 <li>working_man.html</li>
                 <li>student.html</li>
@@ -184,6 +187,90 @@
             <th>Description</th>
             <th>In charge</th>
             <th>Deadline</th>
+        </tr>
+        <tr>
+            <td>index.html</td>
+            <td>A plain introduction site for the website.</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>navbar.html</td>
+            <td>A navigation menu to access essential parts of the website.</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>footer.html</td>
+            <td>A bar with contact information and the location of the offices.</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>courses_overview.html</td>
+            <td>An overview for the different course types.</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>about.html</td>
+            <td>A page including information about the firm</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>help.html</td>
+            <td>An FAQ-based page to help users</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>help.js</td>
+            <td>Javascript for FAQ</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>registration.html</td>
+            <td>A page for user registration</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>login.html</td>
+            <td>A page where users can log in</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>courses/*.html</td>
+            <td>A more detailed description of each course</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>lecturers.html</td>
+            <td>An overview of every lecturer</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>quiz.html</td>
+            <td>A page to test previous knowledge for a course</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(test_procedure.html)</td>
+            <td>Instructions for user during usability testing.</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(test_results.html)</td>
+            <td>Everyone in the group asks one person to participate in the usability testing.</td>
+            <td>Everyone</td>
+            <td></td>
         </tr>
     </table>
 
