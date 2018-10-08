@@ -13,31 +13,179 @@
 <body>
     <h1>Group 1 - Project Design</h1>
     <small>by Martin Skurtveit, Joakim Fremstad, Erlend Marius Ommundsen, Lærke Svendsen
-        <br>Written 20.09.2018</small>
+        <br>Written 08.10.2018</small>
 
 
-    <h2>Choice of client</h2>
-    <p>For this project, we have chosen an imaginary client who wishes to create a website for the HTML-courses, and other courses, they offer here in Trondheim. The company HTMLearning, aims to promote and sell their courses through a website. They have requested a website with user registration and a plain design to make it easier for inexperienced users to navigate the site.
-    </p>
+    <h2>Administrative Details</h2>
+    <p>Client name: HTMLearning</p>
+    <p>Website Name: HTMLearning</p>
+    <p>Contact person: Skybert</p>
+
 
     <h2>Purpose, goals, and audience</h2>
-    <p>The site shall inform users about upcoming courses, prices, and other details about the courses offered, in addition to making it possible to register to a course. In this way the company wishes to reach more of their user base, and make it easier to use their services. To goal is to increase the number of participants in the courses.<br />
-        As a second goal the company wishes to become more known, and improve their reputation. This is achieved by making the site easy to navigate, always available across devices.
-    </p>
-    <p>The websites intended audience is people that want to learn HTML and additional web technologies, but mainly students and people who need it for work. They can be completely new to coding, or they can already have some experience. “HTMLearning” should cater to every level of coding skill. Since the user has different starting points when it comes to knowledge, they need detailed information about the courses that the site provides. One challenge with this audience is the wide variety of devices they use. This could prove challenging when trying to implement a consistent design.
+    <p>The company HTMLearning, aims to promote and sell their courses through a website. The site shall inform users about upcoming courses and the company in general. In this way the company wishes to reach more of their user base, and make it easier to use their services. The goal is to increase the number of participants in the courses. As a second goal the company wishes to become more known, and improve their reputation. The websites intended audience is people that want to learn HTML and additional web technologies, but mainly students and people who need it for work. “HTMLearning” should cater to every level of coding skill. One challenge with this audience is the wide variety of devices they use. This could prove challenging when trying to implement a consistent design.
     </p>
 
     <h2>Navigation Structure</h2>
+    <p>In order to give the user a short overview of the main pages of the site, the navbar at the top links to the main choices and reasons for visiting the site. This way the user can easily move from one part of the site to another without having to move back to the front page.
+    </p>
+    <p>When the user have made their goal of visiting the site clear by choosing one of the main pages, they can then be shown more detailed information about the choice they have made. The pages with details about lecturers and courses are more specific pages, and therefore well suited to this purpose. The user can still change their mind about their purpose for visiting, as the navbar will be available from all pages.
+    </p>
+    <p>The registration of a user is nested under the login page because the purpose of logging in is still the goal, and registration is something presumably only done once by each user.
+    </p>
+    <p>In the list below each root point can be accessed from the menu bar. As the menu bar is available on all pages, these pages will be accessible from all other pages. The children of these pages are accessible only from these pages. </p>
+    <ol>
+        <li>Front page</li>
+        <li>Courses overview
+            <ol>
+                <li>Detailed course description (a page for each course type)
+                    <ol>
+                        <li>Link to the page of the lecturer of this course</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Help/FAQ</li>
+        <li>About us
+            <ol>
+                <li>With a list of lecturers</li>
+            </ol>
+        </li>
+        <li>Login
+            <ol>
+                <li>Registration in login page</li>
+            </ol>
+        </li>
+    </ol>
+
+    <figure>
+        <img src="img/SiteMap.png" alt="Sitemap">
+        <br>
+        <figcaption>
+            Sitemap: Map of the different pages on this site and where you can go from them.
+        </figcaption>
+    </figure>
+    <p>The pages Lecturer and Detailed course description are not merely a single page, but many individual pages for each of the lecturers and courses offered from HTMLearning. The skeleton for these pages will be the same though, and only the content will be different.</p>
 
     <h2>Page Layout and Appearance</h2>
+    <p>Logo/banner on top. Followed by the navigation bar and an option to change text size. The footer should include contact information and the location of the firm.
+    </p>
 
-    <h2>Functional requirements</h2>
+    <h2>Design and layout</h2>
+    <p>The goal of the site will be to get as many course takers as possible. Our main focus when it comes to the design of the web page is therefore minimalism, ability to navigate with ease and user friendliness. We will try to to achieve this by having clear and contrasted colors, not having overcrowded pages and by hopefully having an intuitive layout. The navigation bar will always be visible, even when scrolling. By doing this, the user will always be able to go where it wants to go. These main pages will have sub pages where the user can obtain additional information. The target group of the site is people who want to learn HTML or need to learn it for work related reasons. Both young people and adults should be greeted with enough information to apply for a course. Our client requested that the logo also should be visible, along with the navigation bar, at all times. Visitors will hopefully, because of the logo, remember the name and brand. </p>
 
+    <h3>General styling:</h3>
+    <ul>
+        <li>Fonts:
+            <ul>
+                <li>Muli for headlines</li>
+                <li>Roboto for general text</li>
+            </ul>
+        </li>
+        <li>Font-sizes:
+            <ul>
+                <li>Frontpage will have a logo (image), not text</li>
+                <li>Headlines: 40 px;</li>
+                <li>Text: 18px;</li>
+            </ul>
+        </li>
+        <li>All pages
+            <ul>
+                <li>Full width at the top and some spacing between images/text and the browser window below. </li>
+            </ul>
+        </li>
+        <li>Navigation bar
+            <ul>
+                <li>Buttons will have a small icon (32px x 32px) and text (18px) </li>
+                <li>The buttons appearance will change when hovered over and when clicked.</li>
+            </ul>
+        </li>
+        <li>Logo
+            <ul>
+                <li>A picture of the HTMLearings logo will be visible either at the top of the page or in the upper left corner</li>
+            </ul>
+        </li>
+        <li>Colors:
+            <ul>
+                <li>#17252A</li>
+                <li>#2B7A78</li>
+                <li>#3AAFA9</li>
+                <li>#DEF2F1</li>
+                <li>#FEFFFF</li>
+            </ul>
+        </li>
+    </ul>
     <h2>Content</h2>
 
     <h2>Minimum Requirements</h2>
+    <ul>
+        <li>FAQ</li>
+        <li>Registration for a course</li>
+        <li>Registration as a user</li>
+        <li>Hamburger</li>
+        <li>Lightning course</li>
+    </ul>
 
     <h2>Plan</h2>
+    <p>A good website requires a good structure, below is an overview of the files hierarchy, followed by a plan for each file with deadlines. Changes might occur and will be documented.
+    </p>
+
+    <h3>Organizational scheme </h3>
+    <ul>
+        <li>img/
+            <ul>
+                <li>logo.png</li>
+                <li>favicon.ico</li>
+                <li>lecturers
+                    <ul>
+                        <li>person_1.png</li>
+                        <li>person_2.png</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>css/
+            <ul>
+                <li>main.css</li>
+                <li>navbar.css</li>
+                <li>footer.css</li>
+            </ul>
+        </li>
+        <li>js/
+            <ul>
+                <li>help.js</li>
+                <li>registration.js</li>
+                <li>login.js</li>
+                <li>lecturer.js</li>
+                <li>quiz.js</li>
+            </ul>
+        </li>
+        <li>index.html</li>
+        <li>navbar.html</li>
+        <li>footer.html</li>
+        <li>courses_overview.html</li>
+        <li>courses
+            <ul>
+                <li>working_man.html</li>
+                <li>student.html</li>
+            </ul>
+        </li>
+        <li>about.html</li>
+        <li>lecturers.html</li>
+        <li>help.html</li>
+        <li>login.html</li>
+        <li>quiz.html</li>
+    </ul>
+
+    <h3>Backlog</h3>
+    <table>
+        <tr>
+            <th>File name</th>
+            <th>Description</th>
+            <th>In charge</th>
+            <th>Deadline</th>
+        </tr>
+    </table>
 
     <h2>Final location</h2>
     <p> <a href="https://folk.ntnu.no/joakif/webtek">https://folk.ntnu.no/joakif/webtek</a> </p>
