@@ -28,7 +28,10 @@ small {
 
 p,
 ol,
-li {
+li,
+th,
+td,
+figcaption {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     color: #000000;
