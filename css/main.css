@@ -10,7 +10,7 @@ body {
   display: block;
 } 
 
-.faqquestion > p:hover {
+.faqquestion > h2:hover {
   color: #0000EE;
   text-decoration: underline;
 }
