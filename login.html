@@ -1,3 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login and registration</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <form>
+      <div id="graybox">
+        <input required id="username" type="text" name="user" placeholder="E-mail address: ">
+      </div>
+
+      <div id="graybox">
+        <input required id="password" minlength="4" type="password" name="password" placeholder="Password: ">
+      </div>
+
+      <input type="button" onclick="alert('Successful login')" value="Sign In">
+    </form>
+  </body>
 </html>
