@@ -1,8 +1,10 @@
 function showLogin() {
+  var username = document.getElementById("username");
   var loginbox = document.getElementById("loginbox");
   var signupbox = document.getElementById("signupbox");
   signupbox.style.display = "none";
   loginbox.style.display = "block";
+  username.focus();
 }
 
 function showSignup() {
@@ -10,6 +12,8 @@ function showSignup() {
   var signupbox = document.getElementById("signupbox");
   loginbox.style.display = "none";
   signupbox.style.display = "block";
+  var firstname = document.getElementById("firstname")
+  firstname.focus();
 }
 
 function validateLogin() {
