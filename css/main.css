@@ -52,6 +52,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   border: none;
   width: 20em;
   height: 2.5em;
+  margin-top: 3em;
   margin-bottom: 3em;
 }
 
