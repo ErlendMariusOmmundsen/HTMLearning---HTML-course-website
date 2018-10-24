@@ -1,10 +1,11 @@
 body {
 	margin: 100px;
+  background: #333333;
 }
 
 input {
   background-color: #d3d3d3;
-  width: 80%;
+  width: 50%;
   height: 2em;
 }
 
@@ -21,14 +22,11 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   width: 50%;
   height: 4em;
   float: right;
+  margin-bottom: 2em;
 }
 
 .topbutton.gray {
   background-color: #c4c4c4;
-}
-
-.topbox {
-  background: #c4c4c4;
 }
 
 .whitebox {
@@ -38,10 +36,14 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   margin: auto;
 }
 
+.whitebox > p {
+  margin-left: 4em;
+  font-size: 140%;
+}
+
 .whitebox > form {
-  left: 50%;
-  top: 50%;
-  width: 50%;
+  text-align: center;
+  width: 100%;
 }
 
 .signbtn {
@@ -50,8 +52,10 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   border: none;
   width: 20em;
   height: 2.5em;
+  margin-bottom: 3em;
 }
 
+/* Initially hidden */
 #signupbox {
   display: none;
 }

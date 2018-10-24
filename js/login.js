@@ -11,3 +11,13 @@ function showSignup() {
   loginbox.style.display = "none";
   signupbox.style.display = "block";
 }
+
+function validateLogin() {
+  var username = document.getElementById("username");
+  var password = document.getElementById("password");
+  if (username.checkValidity() && password.checkValidity()){
+    alert("Successful login.");
+  } else {
+    alert("Email or password are not correct.");
+  }
+}
