@@ -1,3 +1,57 @@
 body {
-	margin: auto;
+	margin: 100px;
+}
+
+input {
+  background-color: #d3d3d3;
+  width: 80%;
+  height: 2em;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+.topbutton > p {
+  text-align: center;
+  vertical-align: middle;
+}
+.topbutton {
+  width: 50%;
+  height: 4em;
+  float: right;
+}
+
+.topbutton.gray {
+  background-color: #c4c4c4;
+}
+
+.topbox {
+  background: #c4c4c4;
+}
+
+.whitebox {
+  background-color: #ffffff;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.whitebox > form {
+  left: 50%;
+  top: 50%;
+  width: 50%;
+}
+
+.signbtn {
+  background-color: #17252a;
+  color: #ffffff;
+  border: none;
+  width: 20em;
+  height: 2.5em;
+}
+
+#signupbox {
+  display: none;
 }
