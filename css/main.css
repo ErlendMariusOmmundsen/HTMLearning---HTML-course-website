@@ -5,8 +5,18 @@ body {
 
 input {
   background-color: #d3d3d3;
-  width: 50%;
+  width: 40%;
   height: 2em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+input.long {
+  background-color: #d3d3d3;
+  height: 2em;
+  margin-bottom: 1em;
+  width: 84.5%;
 }
 
 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -52,7 +62,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   border: none;
   width: 20em;
   height: 2.5em;
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 3em;
 }
 

@@ -28,7 +28,12 @@ function validateSignup() {
   var passwordsignup = document.getElementById("passwordsignup")
   var passwordconf = document.getElementById("passwordconf")
   if (firstname.checkValidity() && lastname.checkValidity() && usernamesignup.checkValidity() && passwordsignup.checkValidity() && passwordconf.checkValidity()){
-    alert("You are now registered.");
+    if (passwordsignup.value === passwordconf.value) {
+      alert("You are now registered.");
+    } else {
+      alert("The passwords entered do not match.");
+    }
+
   } else {
     alert("The details entered are not correct, please check them again.");
   }
