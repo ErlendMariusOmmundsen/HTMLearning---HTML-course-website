@@ -1,3 +1,16 @@
+#nav_bar{
+  margin-top: 0px;
+}
+
+body {
+  background: #50d8b6;
+  height: 100%;
+}
+
+.faq, h1 {
+  margin-left: 10%;
+}
+
 .faqanswer {
   display: none;
 }
