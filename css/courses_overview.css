@@ -1,8 +1,6 @@
         .courses_box {
-            background-color: cadetblue;
-            /* Replace with rigth color */
-            color: whitesmoke;
-            /* Replace with rigth color */
+            background-color: var(--button-color);
+            color: var(--white-color);
             display: block;
             float: left;
             box-sizing: border-box;
@@ -13,8 +11,7 @@
         }
 
         .courses_box:hover {
-            background-color: aqua;
-            /* Replace with rigth color */
+            background-color: var(--navbar-color);
         }
 
         .title_text {
