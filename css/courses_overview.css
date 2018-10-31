@@ -1,44 +1,53 @@
-        .courses_box {
-            background-color: var(--button-color);
-            color: var(--white-color);
-            display: block;
-            float: left;
-            box-sizing: border-box;
-            padding: 10px;
-            margin: 20px;
-            width: 45%;
-            position: relative;
-        }
+#nav_bar {
+    margin-top: 0px;
+}
 
-        .courses_box:hover {
-            transform: scale(1.05);
-        }
+body {
+    background: #50d8b6;
+    height: 100%;
+}
 
-        .title_text {
-            font-weight: bold;
-            font-size: 16pt;
-            position: absolute;
-            bottom: 50%;
-            right: 50%;
-            transform: translate(60%, 50%);
-        }
+.courses_box {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px;
+    width: 45%;
+    position: relative;
+}
 
-        .price {
-            float: right;
-        }
+.courses_box:hover {
+    transform: scale(1.05);
+}
 
-        .upcoming {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-        }
+.title_text {
+    font-weight: bold;
+    font-size: 16pt;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(60%, 50%);
+}
 
-        /*SCREEN RELATIVITY*/
-        @media screen and (max-width: 1040px) {
-            .courses_box {
-                float: none;
-                margin: auto;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                width: 80%;
-            }
+.price {
+    float: right;
+}
+
+.upcoming {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/*SCREEN RELATIVITY*/
+@media screen and (max-width: 880px) {
+    .courses_box {
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+    }

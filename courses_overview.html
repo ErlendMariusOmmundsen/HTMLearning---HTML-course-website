@@ -5,11 +5,13 @@
     <title>Courses overview</title>
     <meta charset=utf-8 />
     <link rel="stylesheet" href="css/main.css" media="screen" />
+    <link rel="stylesheet" href="css/frontpage_style.css" />
     <link rel="stylesheet" href="css/courses_overview.css" media="screen" />
 </head>
 
 <body>
-    <!-- Include header and footer -->
+    <!-- Include footer -->
+    <div id="placeholder-navbar"></div>
     <!-- Hard to when it gets smaller, easy fix would be to merely remove img when too small -->
     <div class="container">
         <a class="courses_box" href="courses/html_working_man.html">
@@ -38,5 +40,10 @@
         </a>
     </div>
 </body>
+<script src="js/includeHTML.js"></script>
+<script>
+    setNavbar();
+
+</script>
 
 </html>
