@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  height: 1500px;
+  height: 1800px;
 }
 
 /*NAVIGASJONSBAR*/
@@ -139,6 +139,7 @@ body{
   float: left;
   margin-left: -35%;
   padding: 40px;
+  margin-top: -20px;
 }
 
 h2{
@@ -158,6 +159,24 @@ h2{
 
 #third_content{
   margin-top: 660px;
+}
+
+.content_input{
+    font-family: Muli;
+    background-color: #3AAFA9;
+    border: none;
+    padding: 10px 20px 10px;
+    transition: all 0.2s ease-out;
+    transition: all 0.15s ease-in;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    border-radius: 10px;
+}
+
+.content_input:hover{
+  color: #FEFFFF;
 }
 
 ::-webkit-scrollbar {
