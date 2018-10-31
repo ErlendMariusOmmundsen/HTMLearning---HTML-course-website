@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Login and registration</title>
+    <link rel="stylesheet" href="css/frontpage_style.css">
     <link rel="stylesheet" href="css/login.css" type="text/css" media="screen" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="js/login.js"></script>
+    <script src="js/includeHTML.js"></script>
   </head>
   <body>
+    <div w3-include-html="navbar.html"></div> 
     <div id="loginbox" class="whitebox">
       <div class="topbutton gray" onclick="showSignup()"><p>Sign up</p></div>
       <div class="topbutton"><p>Login</p></div>
@@ -38,4 +41,7 @@
       </form>
     </div>
   </body>
+  <script>
+    includeHTML();
+  </script> 
 </html>
