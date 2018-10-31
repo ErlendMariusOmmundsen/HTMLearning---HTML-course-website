@@ -14,3 +14,11 @@ function setNavbar() {
       <button onclick="location.href='` + folder_up + `login.html';" id="Login_input" type="button" >Login</button>`;
     navbar.innerHTML = navbar_html;
 };
+
+function setFooter() {
+  footer = document.getElementById("placeholder-footer");
+  footer.id = "footer"
+  footer.innerHTML = `
+      ADD FOOTER CODE HERE
+`
+};
