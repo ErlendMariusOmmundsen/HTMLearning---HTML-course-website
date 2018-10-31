@@ -73,6 +73,10 @@
             padding: 10px;
         }
 
+        .review_box>p {
+            padding-left: 20px;
+        }
+
         #all_reviews_box {
             display: none;
         }
@@ -105,8 +109,29 @@
                         <td>10:00-12:00</td>
                         <td>Second part of course covers forms</td>
                     </tr>
+                    <tr>
+                        <td>03/11/18</td>
+                        <td>10:00-12:00</td>
+                        <td>First part of course covers tables</td>
+                    </tr>
+                    <tr>
+                        <td>10/11/18</td>
+                        <td>10:00-12:00</td>
+                        <td>Second part of course covers forms</td>
+                    </tr>
                 </table>
-                <p>Information about this course</p>
+                <p>This course covers:</p>
+                <ul>
+                    <li>tables</li>
+                    <li>forms</li>
+                </ul>
+
+                <p>Recommended knowledge:</p>
+                <ul>
+                    <li>Basic HTML structure</li>
+                </ul>
+
+                <p>PCs will be provided, but you are encouraged to bring your own laptop.</p>
                 <button id="show_review_button">Show reviews</button>
             </div>
             <div id="info_bar">
@@ -117,7 +142,8 @@
                     <p>Location: Søndre gate 4, Trondheim</p>
                 </div>
                 <div>
-                    <!-- Add img of lecturer -->
+                    <!-- Add link to specific lecturer -->
+                    <img src="../img/lecturers/default_lecturer.png" alt="Picture of lecturer">
                     <p>Lecturer: Lecturer</p>
                 </div>
                 <button>Test your knowledge of the course material!</button>
@@ -126,7 +152,16 @@
 
         <div id="all_reviews_box">
             <div class="review_box">
+                <img src="../img/fivestar.png" alt="Five stars">
                 <p>Great course!</p>
+            </div>
+            <div class="review_box">
+                <img src="../img/fivestar.png" alt="Five stars">
+                <p>Very relevant for my work day.</p>
+            </div>
+            <div class="review_box">
+                <img src="../img/onestar.png" alt="One stars">
+                <p>The lecturer sucked, not going to this course again.</p>
             </div>
         </div>
     </div>
