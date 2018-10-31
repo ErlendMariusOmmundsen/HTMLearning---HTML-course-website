@@ -43,7 +43,7 @@ body {
 }
 
 /*SCREEN RELATIVITY*/
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
     .courses_box {
         float: none;
         margin: auto;
