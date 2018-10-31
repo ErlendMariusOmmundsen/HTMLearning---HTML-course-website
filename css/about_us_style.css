@@ -1,0 +1,156 @@
+/*NAVBAR*/
+#nav_bar{
+  position: fixed;
+  top: 0px;
+  margin-left: -8px;
+  height: 100px;
+  width: 100%;
+  background-color: #3AAFA9;
+  z-index: 999;
+}
+
+    #nav_bar button{
+      font-family: Muli;
+      display: inline-block;
+      background: transparent;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      color: #17252A;
+      border-radius: 2px;
+      padding: 0.5% 2% 0.5%;
+      transition: all 0.2s ease-out;
+      transition: all 0.15s ease-in;
+      background: linear-gradient(270deg, #3a5d69, #17252A, rgba(34,34,34,0), rgba(34,34,34,0));
+      background-position: 1% 50%;
+      background-size: 300% 300%;
+      margin-left: 20px;
+      margin-top: 35px;
+      border: 1px solid #17252A;
+    }
+
+    #nav_bar button:hover{
+      border: 1px solid rgba(223,190,106,0);
+      color: #FEFFFF;
+      background-position: 99% 50%;
+    }
+
+  #logo_element{
+    width: 340px;
+    margin-top: 17px;
+    float: left;
+  }
+
+/*Fonts*/
+*{
+  font-family: Roboto;
+}
+
+h1, h2, h3{
+  font-family: Muli;
+}
+
+/*ABOUT US*/
+
+#about_div{
+  margin: auto;
+  margin-top: 140px;
+  width: 700px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+    #about_div h1{
+      margin-bottom: 30px;
+    }
+
+#stuffs{
+  display: block;
+  width: 820px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+  #aim_div{
+    margin-bottom: 30px;
+    margin-left: 60px;
+    float: right;
+    width: 350px;
+    height: 350px;
+    background-color: #DEF2F1;
+  }
+    #aim_text, #aim_headline{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    #aim_text{
+      font-size: 17px;
+    }
+
+#picture_div{
+  float: right;
+  right: 20px:
+}
+  #work_big_img{
+    width: 400px;
+  }
+  #work_smaller1_img{
+    width: 198px;
+  }
+  #work_smaller2_img{
+    width: 198px;
+  }
+
+#all_lecturers{
+  position: relative;
+  display: block;
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+  margin-top: 500px;
+}
+
+  .lecturer{
+    float: left;
+    width: 260px;
+    height: 300px;
+    margin: 30px;
+    margin-top: 100px;
+    background-color:  #eaeaea;
+    transition: all 0.4s ease-out;
+    transition: all 0.4s ease-in;
+  }
+
+    .lecturer:hover{
+      transform: scale(1.15);
+    }
+
+    .lecturer img{
+      display: block;
+      width: 130px;
+      border-radius: 50%;
+      margin: auto;
+      margin-top: -50px;
+    }
+    .lecturer h3, p{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+
+
+/*SCREEN RELATIVITY*/
+@media screen and (max-width: 1040px) {
+  #logo_element {
+    display: none;
+  }
+
+@media screen and (max-width: 1040px) {
+  #logo_element {
+    display: none;
+  }
