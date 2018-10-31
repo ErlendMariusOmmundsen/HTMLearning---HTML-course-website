@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/about_us_style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="js/includeHTML.js"></script>
   </head>
   <body>
     <div id="nav_bar">
@@ -68,6 +69,11 @@
           <h3>Navn Navnesen</h3>
         </div>
       </div>
-
+	<footer>
+		<div w3-include-html="footer.html"></div> 
+	</footer>
+	<script>includeHTML();</script>
+	<script src="js/maps.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
   </body>
 </html>
