@@ -121,7 +121,7 @@ body{
   background-color: #3a5d69;
   width: 55%;
   height: 35%;
-  padding: 20px;
+  padding: 40px;
   margin-left: 15%;
   margin-top: 150px;
 }
@@ -131,13 +131,14 @@ body{
   position: relative;
   float: right;
   margin-right: -35%;
+  padding: 20px;
 }
 
 #happy_element2{
   position: relative;
   float: left;
   margin-left: -35%;
-  padding-right: 30px;
+  padding: 40px;
 }
 
 h2{
@@ -153,11 +154,10 @@ h2{
 #second_content{
   float: right;
   margin-right: 15%;
-  padding: 20px;
 }
 
 #third_content{
-  margin-top: 600px;
+  margin-top: 660px;
 }
 
 ::-webkit-scrollbar {
