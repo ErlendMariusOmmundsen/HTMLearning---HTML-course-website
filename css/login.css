@@ -1,6 +1,10 @@
+#nav_bar{
+  margin-top: 0px;
+}
+
 body {
-	margin: 100px;
   background: #50d8b6;
+  height: 100%;
 }
 
 input {
