@@ -64,7 +64,7 @@
             </div>
             <div id="info_bar">
                 <p>Price 100,- NOK</p>
-                <button>Register for course</button> <!-- Replace with same buttons as in menubar -->
+                <button id="register_course_button">Register for course</button> <!-- Replace with same buttons as in menubar -->
                 <div>
                     <!-- Add Google maps reference -->
                     <p>Location: Søndre gate 4, Trondheim</p>
@@ -94,23 +94,13 @@
         </div>
     </div>
     <footer id="placeholder-footer"></footer>
+    <script src="../js/courses.js" />
+    </body>
+<script src="../js/includeHTML.js"></script>
     <script>
-        document.getElementById('show_review_button').addEventListener('click', function() {
-            let all_reviews = document.getElementById('all_reviews_box');
-            if (all_reviews.style.display == 'block') {
-                all_reviews.style.display = 'none';
-            } else {
-                all_reviews.style.display = 'block';
-            }
-        })
+        let inside_folder = true;
+        setAll();
 
     </script>
-</body>
-<script src="../js/includeHTML.js"></script>
-<script>
-    let inside_folder = true;
-    setAll();
-
-</script>
 
 </html>
