@@ -1,0 +1,72 @@
+body {
+	margin: 100px;
+  background: #50d8b6;
+}
+
+input {
+  background-color: #d3d3d3;
+  width: 40%;
+  height: 2em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+input.long {
+  background-color: #d3d3d3;
+  height: 2em;
+  margin-bottom: 1em;
+  width: 84.5%;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+.topbutton > p {
+  text-align: center;
+  vertical-align: middle;
+}
+.topbutton {
+  width: 50%;
+  height: 4em;
+  float: right;
+  margin-bottom: 2em;
+}
+
+.topbutton.gray {
+  background-color: #c4c4c4;
+}
+
+.whitebox {
+  background-color: #ffffff;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.whitebox > p {
+  margin-left: 4em;
+  font-size: 140%;
+}
+
+.whitebox > form {
+  text-align: center;
+  width: 100%;
+}
+
+.signbtn {
+  background-color: #17252a;
+  color: #ffffff;
+  border: none;
+  width: 20em;
+  height: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+/* Initially hidden */
+#signupbox {
+  display: none;
+}

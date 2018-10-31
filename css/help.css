@@ -1,0 +1,13 @@
+.faqanswer {
+  display: none;
+}
+
+.faqanswer.open {
+  display: block;
+} 
+
+.faqquestion > h2:hover {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
