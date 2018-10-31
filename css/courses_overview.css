@@ -11,7 +11,7 @@
         }
 
         .courses_box:hover {
-            background-color: var(--navbar-color);
+            transform: scale(1.05);
         }
 
         .title_text {
@@ -32,3 +32,13 @@
             bottom: 10px;
             right: 10px;
         }
+
+        /*SCREEN RELATIVITY*/
+        @media screen and (max-width: 1040px) {
+            .courses_box {
+                float: none;
+                margin: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 80%;
+            }
