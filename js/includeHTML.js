@@ -16,10 +16,13 @@ function setNavbar() {
 };
 
 function setFooter() {
-  footer = document.getElementById("placeholder-footer");
-  footer.id = "footer"
-  footer.innerHTML = `
-<footer>
+    footer = document.getElementById("placeholder-footer");
+    footer.id = "footer"
+    let folder_up = '';
+    if (typeof inside_folder !== 'undefined') {
+        folder_up = '../';
+    };
+    let footer_html = `
 <div id="info">
 	<h1 style="color:#def2f1;font-family:muli,serif;"> About the company </h1>
 	<p style="color:grey;">
@@ -28,16 +31,16 @@ function setFooter() {
 	</p>
 
 	<div class="grid-container">
-	<div class="item1"><img class="icon" src="img/Mailicon.png" alt="E-mail:"/></div>
+	<div class="item1"><img class="icon" src="` + folder_up + `img/Mailicon.png" alt="E-mail:"/></div>
 	<div class="item2"><a href="mailto:help@htmlearning.com?Subject=HTMLearning" target="_top">help@htmlearning.com</a></div>
-	<div class="item3"><img class="icon" src="img/phoneicon.png" alt="Phone:"/></div>
+	<div class="item3"><img class="icon" src="` + folder_up + `img/phoneicon.png" alt="Phone:"/></div>
 	<div class="item4"><a href="tel:+4700000000">+47 000 00 000 </a></div>
 	</div>
 </div>
 <div id="map">
 	<div id="googlemaps" style="width:320px;height:200px;" >Map to location</div>
 	<div class="grid-container2">
-	<div class="item5"><img class="icon" src="img/positionicon.png" alt="Pos:"/></div>
+	<div class="item5"><img class="icon" src="` + folder_up + `img/positionicon.png" alt="Pos:"/></div>
 	<div class="item6"><a href="https://www.google.com/maps/place/Sondre+gate+4,+7011+Trondheim">
 		Søndre gate 4, Trondheim</a></div>
 	</div>
@@ -46,11 +49,11 @@ function setFooter() {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
 </div>
 <p style="color:grey;font-size: 10px;">Created by IT2805 Webteknologi group 1 </p>
-</footer>
-`
+`;
+    footer.innerHTML = footer_html;
 };
 
 function setAll() {
-  setNavbar();
-  setFooter();
+    setNavbar();
+    setFooter();
 }
