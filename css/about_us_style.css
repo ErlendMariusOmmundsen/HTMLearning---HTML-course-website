@@ -52,6 +52,9 @@ h1, h2, h3{
 }
 
 /*ABOUT US*/
+body{
+  background-color: #DEF2F1;
+}
 
 #about_div{
   margin: auto;
@@ -117,9 +120,10 @@ h1, h2, h3{
     height: 300px;
     margin: 30px;
     margin-top: 100px;
-    background-color:  #eaeaea;
+    background-color:  #AEB6BF;
     transition: all 0.4s ease-out;
     transition: all 0.4s ease-in;
+    border-radius: 8px;
   }
 
     .lecturer:hover{
