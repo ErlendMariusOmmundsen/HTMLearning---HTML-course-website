@@ -1,3 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/frontpage_style.css">
+    <link rel="stylesheet" href="css/quiz.css" type="text/css" media="screen" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/quiz.js"></script>
+    <script src="js/includeHTML.js"></script>
+  </head>
+  <body>
+    <div id="placeholder-navbar"></div> 
+    <div id="quizbox">
+      <p id="question">Spørsmål?</p>
+      <form id="answerform">
+        <input id="alt1" type="radio" name="answer" value="a1"> a1
+        <br>
+        <input id="alt2" type="radio" name="answer" value="a2"> a2
+        <br>
+        <input id="alt3" type="radio" name="answer" value="a3"> a3
+        <br>
+        <input id="alt4" type="radio" name="answer" value="a4"> a4
+        <br>
+        <br>
+        <input type="button" onclick="prev()" value="Previous question">
+        <input type="button" onclick="next()" value="Next question">
+      </form>
+    </div>
+  </body>
+  <div id="placeholder-footer"></div> 
+  <script>
+    setAll();
+  </script> 
 </html>

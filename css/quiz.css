@@ -1,0 +1,32 @@
+#nav_bar{
+  margin-top: 0px;
+}
+
+body {
+  background: #50d8b6;
+  height: 100%;
+}
+
+
+#quizbox {
+  background-color: white;
+  min-height: 300px;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+#quizbox > form {
+  margin-left: 8em;
+  width: 100%;
+}
+
+#quizbox > p {
+  margin-left: 4em;
+  font-size: 140%;
+}
+
+input {
+  color: black;
+  opacity: 1; /* Firefox */
+}
