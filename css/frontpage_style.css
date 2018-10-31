@@ -153,6 +153,10 @@ h2{
   color: #FEFFFF;
 }
 
+#first_content{
+  margin-top: 100px;
+}
+
 #second_content{
   float: right;
   margin-right: 15%;
