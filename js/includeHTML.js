@@ -9,3 +9,11 @@ function setNavbar() {
       <button onclick="location.href='about.html';" id="About_input" type="button" >About us</button>
       <button onclick="location.href='login.html';" id="Login_input" type="button" >Login</button>`
 };
+
+function setFooter() {
+  footer = document.getElementById("placeholder-footer");
+  footer.id = "footer"
+  footer.innerHTML = `
+      ADD FOOTER CODE HERE
+`
+};
