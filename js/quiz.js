@@ -21,14 +21,12 @@ const questions_list = [
     }
 ];
 const quiz_container = document.getElementById('quiz_box');
-const results_container = document.getElementById('results_box');
 const next_button = document.getElementById('next_question');
 const prev_button = document.getElementById('previous_question');
-
 let question_counter = 0;
 let user_selections = [];
 
-function createQuestionElement(question_index) {
+function showQuestion(question_index) {
     let answers = [];
     for (alt in questions_list[question_index].answers) {
         answers.push(
@@ -39,37 +37,58 @@ function createQuestionElement(question_index) {
             '</label> <br/>'
         )
     }
-    return '<div class="question">' + questions_list[question_index].question + '</div>' +
+    quiz_container.innerHTML = '<div class="question">' + questions_list[question_index].question + '</div>' +
         '<div class="answers">' + answers.join('') + '</div>';
-
 };
 
-function showResults(questions_list, quiz_container, results_container) {
-    let answerContainers = quiz_container.querySelectorAll('.answers');
-    let userAnswer = '';
-    let numCorrect = 0;
+function showResults() {
+    let results = 0;
     for (let i = 0; i < questions_list.length; i++) {
-        userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
-        if (userAnswer === questions_list[i].correct_answer) {
-            numCorrect++;
-            answerContainers[i].style.color = 'lightgreen';
-        } else {
-            answerContainers[i].style.color = 'red';
+        if (questions_list[i].correct_answer === user_selections[i]) {
+            results++;
         }
     }
-    results_container.innerHTML = numCorrect + ' out of ' + questions_list.length;
+    let additional;
+    if (results > Math.ceil(questions_list.length / 2)) {
+        additional = 'Good job! You know alot of what this course covers already.';
+    } else {
+        additional = 'Not too good, you might have need of this course.'
+    }
+    quiz_container.innerHTML = '<p>Quiz finished!</p> <p>Your score is ' + results + '/' + questions_list.length + '</p> <p>' + additional + '</p>';
 };
 
-function generateQuiz(questions_list, quiz_container, results_container, next_button) {
-    let output = [];
-    for (let i = 0; i < questions_list.length; i++) {
-        output.push('<div class="slide">' + createQuestionElement(i) + '</div>');
+function saveChoice() {
+    user_selections[question_counter] = (quiz_container.querySelector('input[name=question' + question_counter + ']:checked') || {}).value;
+}
+
+function showNext() {
+    if (question_counter === questions_list.length) {
+        showResults();
+    } else {
+        showQuestion(question_counter);
+        if (user_selections[question_counter] !== undefined) {
+            quiz_container.querySelector('input[value=' + user_selections[question_counter] + ']').checked = true;
+        }
     }
-    quiz_container.innerHTML = output.join('');
 };
+
+showNext(question_counter);
 
 next_button.addEventListener('click', function () {
-    showResults(questions_list, quiz_container, results_container);
+    saveChoice();
+    if (user_selections[question_counter] === undefined) {
+        alert('You must make a choice.');
+    } else {
+        question_counter++;
+        showNext();
+    }
 });
 
-generateQuiz(questions_list, quiz_container, results_container, next_button);
+prev_button.addEventListener('click', function () {
+    saveChoice();
+    question_counter--;
+    if (question_counter < 0) {
+        question_counter = 0;
+    }
+    showNext();
+});

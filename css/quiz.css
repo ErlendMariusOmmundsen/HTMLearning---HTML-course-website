@@ -9,10 +9,10 @@ body {
 
 #quiz_box {
     background-color: white;
-    min-height: 300px;
     width: 50%;
     height: 50%;
     margin: auto;
+    padding: 10px;
 }
 
 .question {
