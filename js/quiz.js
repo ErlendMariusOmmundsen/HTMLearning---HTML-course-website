@@ -20,56 +20,56 @@ const questions_list = [
         correct_answer: 'a'
     }
 ];
+const quiz_container = document.getElementById('quiz_box');
+const results_container = document.getElementById('results_box');
+const next_button = document.getElementById('next_question');
+const prev_button = document.getElementById('previous_question');
 
-function generateQuiz(questions_list, quiz_container, results_container, submit_button) {
+let question_counter = 0;
+let user_selections = [];
 
-    function showQuestions(questions_list, quiz_container) {
-        let output = [];
-        let answers;
-        for (let i = 0; i < questions_list.length; i++) {
-            answers = [];
-            for (alt in questions_list[i].answers) {
-                answers.push(
-                    '<label>' +
-                    '<input type="radio" name="question' + i + '" value="' + alt + '">' +
-                    alt + ': ' +
-                    questions_list[i].answers[alt] +
-                    '</label> <br/>'
-                )
-            }
-            output.push(
-                '<div class="question">' + questions_list[i].question + '</div>' +
-                '<div class="answers">' + answers.join('') + '</div>'
-            );
-        }
-        quiz_container.innerHTML = output.join('');
-    };
+function createQuestionElement(question_index) {
+    let answers = [];
+    for (alt in questions_list[question_index].answers) {
+        answers.push(
+            '<label>' +
+            '<input type="radio" name="question' + question_index + '" value="' + alt + '">' +
+            alt + ': ' +
+            questions_list[question_index].answers[alt] +
+            '</label> <br/>'
+        )
+    }
+    return '<div class="question">' + questions_list[question_index].question + '</div>' +
+        '<div class="answers">' + answers.join('') + '</div>';
 
-    function showResults(questions_list, quiz_container, results_container) {
-        let answerContainers = quiz_container.querySelectorAll('.answers');
-        let userAnswer = '';
-        let numCorrect = 0;
-        for (let i = 0; i < questions_list.length; i++) {
-            userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
-            if (userAnswer === questions_list[i].correct_answer) {
-                numCorrect++;
-                answerContainers[i].style.color = 'lightgreen';
-            } else {
-                answerContainers[i].style.color = 'red';
-            }
-        }
-        results_container.innerHTML = numCorrect + ' out of ' + questions_list.length;
-    };
-
-    showQuestions(questions_list, quiz_container);
-
-    submit_button.onclick = function () {
-        showResults(questions_list, quiz_container, results_container);
-    };
 };
 
+function showResults(questions_list, quiz_container, results_container) {
+    let answerContainers = quiz_container.querySelectorAll('.answers');
+    let userAnswer = '';
+    let numCorrect = 0;
+    for (let i = 0; i < questions_list.length; i++) {
+        userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
+        if (userAnswer === questions_list[i].correct_answer) {
+            numCorrect++;
+            answerContainers[i].style.color = 'lightgreen';
+        } else {
+            answerContainers[i].style.color = 'red';
+        }
+    }
+    results_container.innerHTML = numCorrect + ' out of ' + questions_list.length;
+};
 
-let quiz_container = document.getElementById('quiz_box');
-let results_container = document.getElementById('results_box');
-let submit_button = document.getElementById('next_question');
-generateQuiz(questions_list, quiz_container, results_container, submit_button);
+function generateQuiz(questions_list, quiz_container, results_container, next_button) {
+    let output = [];
+    for (let i = 0; i < questions_list.length; i++) {
+        output.push('<div class="slide">' + createQuestionElement(i) + '</div>');
+    }
+    quiz_container.innerHTML = output.join('');
+};
+
+next_button.addEventListener('click', function () {
+    showResults(questions_list, quiz_container, results_container);
+});
+
+generateQuiz(questions_list, quiz_container, results_container, next_button);
