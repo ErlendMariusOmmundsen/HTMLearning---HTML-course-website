@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/frontpage_style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/includeHTML.js"></script>
   </head>
   <body>
     <div id="welcome_element">
@@ -14,14 +15,7 @@
       <button id="learn_element" type="button">Start Learning</button>
       <a href="#nav_bar"><img id="arrow_img" src="img/pil.png" alt="Arrow"></a>
     </div>
-      <div id="nav_bar">
-        <a href="frontpage.html"><img id="logo_element" src="img/logo.png" alt="logo"></a>
-        <button onclick="location.href='index.html';" id="home_input" type="button" >Home</button>
-        <button onclick="location.href='courses_overview.html';" id="courses_input" type="button" >Courses</button>
-        <button onclick="location.href='help.html';" id="faq_input" type="button" >FAQ/Help</button>
-        <button onclick="location.href='about.html';" id="About_input" type="button" >About us</button>
-        <button onclick="location.href='login.html';" id="Login_input" type="button" >Login</button>
-      </div>
+      <div id="placeholder-navbar"></div>
       <div id="welcome_info">
         <div class="content" id="first_content">
           <img id="happy_element" src="img/course.jpg" width="55%" alt="happy">
@@ -62,4 +56,8 @@
 
 
   </body>
+  <footer id="placeholder-footer"></footer>
+  <script>
+    setAll();
+  </script>
 </html>
