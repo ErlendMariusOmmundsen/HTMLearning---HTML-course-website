@@ -49,10 +49,11 @@ function showResults() {
         }
     }
     let additional;
+
     if (results > Math.ceil(questions_list.length / 2)) {
         additional = 'Good job! You know alot of what this course covers already.';
     } else {
-        additional = 'Not too good, you might have need of this course.'
+        additional = 'This was a bit hard for you, you might have need of this course.'
     }
     quiz_container.innerHTML = '<p>Quiz finished!</p> <p>Your score is ' + results + '/' + questions_list.length + '</p> <p>' + additional + '</p>';
 };
@@ -72,6 +73,7 @@ function showNext() {
     }
 };
 
+/** Initializing the question, and adding EventListeners **/
 showNext(question_counter);
 
 next_button.addEventListener('click', function () {
@@ -92,3 +94,32 @@ prev_button.addEventListener('click', function () {
     }
     showNext();
 });
+
+/** Drawing the progress bar using a canvas **/
+const canvas = document.getElementById('progress_canvas');
+const context = canvas.getContext('2d');
+context.canvas.width = window.innerWidth;
+context.canvas.height = window.innerHeight * 0.2;
+let centerY = canvas.height / 2;
+context.lineWidth = 2;
+
+function drawLine(fromX, toX) {
+    context.beginPath();
+    context.moveTo(toX, centerY);
+    context.lineTo(fromX, centerY);
+    context.closePath();
+    context.stroke();
+}
+
+function drawCircle(x, radius, color = 'lightgrey') {
+    context.beginPath();
+    context.arc(x, centerY, radius, 0, 2 * Math.PI, false);
+    context.fillStyle = color;
+    context.fill();
+    context.stroke();
+}
+
+drawCircle(50, 25);
+drawLine(50 + 25, 50 + 25 + 50);
+
+function drawProgress() {}

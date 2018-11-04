@@ -8,7 +8,6 @@ body {
 }
 
 #quiz_box {
-    background-color: white;
     width: 50%;
     height: 50%;
     margin: auto;
@@ -20,7 +19,7 @@ body {
 }
 
 .answers {
-    margin-left: 2em;
+    padding: 2em;
     width: 100%;
 }
 
