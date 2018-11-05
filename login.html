@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Login and registration</title>
-    <link rel="stylesheet" href="css/frontpage_style.css">
-    <link rel="stylesheet" href="css/login.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="js/login.js"></script>
     <script src="js/includeHTML.js"></script>
   </head>
   <body>
+	<div id="container">
     <div id="placeholder-navbar"></div> 
+	<div id="content-wrap" class="container">
     <div id="loginbox" class="whitebox">
       <div class="topbutton gray" onclick="showSignup()"><p>Sign up</p></div>
       <div class="topbutton"><p>Login</p></div>
@@ -40,9 +41,13 @@
         <input class="signbtn" type="button" onclick="validateSignup()" value="Sign up">
       </form>
     </div>
-    <footer id="placeholder-footer"></footer> 
-    <script>
-      setAll();
-    </script> 
+	</div>
+  <footer id="placeholder-footer"></footer>
+  </div>
   </body>
+  <script>
+    setAll();
+  </script> 
+  <script src="js/maps.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
 </html>
