@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Quiz</title>
-    <link rel="stylesheet" href="../css/main.css" media="screen"/>
+    <link rel="stylesheet" href="../css/main.css" media="screen" />
     <link rel="stylesheet" href="css/frontpage_style.css">
-    <link rel="stylesheet" href="css/quiz.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/quiz.css" type="text/css" media="screen" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="js/includeHTML.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="placeholder-navbar"></div>
     <div class="container">
         <div>
@@ -22,6 +22,7 @@
         <div id="back_and_forth_box">
             <button id="previous_question">Previous question</button>
             <button id="next_question">Next question</button>
+            <button onclick="window.location.reload()" id="restart_button">Start again</button>
         </div>
         <div id="progress_bar">
             <canvas id="progress_canvas"></canvas>
@@ -32,5 +33,5 @@
     <script>
         setAll();
     </script>
-  </body>
+</body>
 </html>
