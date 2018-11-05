@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML for the working man</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/main.css" media="screen" />
+    <link rel="stylesheet" href="../css/frontpage_style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/course.css" media="screen" />
+</head>
+
+<body>
+    <!-- Include footer -->
+    <div id="placeholder-navbar"></div>
+    <div class="container">
+        <div class="heading_box">
+            <img src="../img/html.png" alt="HTML5 icon">
+            <span>for the working man</span>
+        </div>
+        <div id="info_box">
+            <div id="about_box">
+                <p>Coming courses:</p>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>20/10/18</td>
+                        <td>10:00-12:00</td>
+                        <td>First part of course covers tables</td>
+                    </tr>
+                    <tr>
+                        <td>27/10/18</td>
+                        <td>10:00-12:00</td>
+                        <td>Second part of course covers forms</td>
+                    </tr>
+                    <tr>
+                        <td>03/11/18</td>
+                        <td>10:00-12:00</td>
+                        <td>First part of course covers tables</td>
+                    </tr>
+                    <tr>
+                        <td>10/11/18</td>
+                        <td>10:00-12:00</td>
+                        <td>Second part of course covers forms</td>
+                    </tr>
+                </table>
+                <p>This course covers:</p>
+                <ul>
+                    <li>tables</li>
+                    <li>forms</li>
+                </ul>
+
+                <p>Recommended knowledge:</p>
+                <ul>
+                    <li>Basic HTML structure</li>
+                </ul>
+
+                <p>PCs will be provided, but you are encouraged to bring your own laptop.</p>
+                <button id="show_review_button">Show reviews</button>
+            </div>
+            <div id="info_bar">
+                <p>Price 100,- NOK</p>
+                <button id="register_course_button">Register for course</button> <!-- Replace with same buttons as in menubar -->
+                <div>
+                    <!-- Add Google maps reference -->
+                    <p>Location: Søndre gate 4, Trondheim</p>
+                </div>
+                <div>
+                    <!-- Add link to specific lecturer -->
+                    <img src="../img/lecturers/default_lecturer.png" alt="Picture of lecturer">
+                    <p>Lecturer: Lecturer</p>
+                </div>
+                <button onclick="location.href='../quiz.html';">Test your knowledge of the course material!</button>
+            </div>
+        </div>
+
+        <div id="all_reviews_box">
+            <div class="review_box">
+                <img src="../img/fivestar.png" alt="Five stars">
+                <p>Great course!</p>
+            </div>
+            <div class="review_box">
+                <img src="../img/fivestar.png" alt="Five stars">
+                <p>Very relevant for my work day.</p>
+            </div>
+            <div class="review_box">
+                <img src="../img/onestar.png" alt="One stars">
+                <p>The lecturer sucked, not going to this course again.</p>
+            </div>
+        </div>
+    </div>
+    <footer id="placeholder-footer"></footer>
+    <script src="../js/courses.js"></script>
+</body>
+<script src="../js/includeHTML.js"></script>
+<script>
+    let inside_folder = true;
+    setAll();
+
+</script>
+
+</html>

@@ -1,0 +1,53 @@
+#nav_bar {
+    margin-top: 0px;
+}
+
+body {
+    background: #50d8b6;
+    height: 100%;
+}
+
+.courses_box {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px;
+    width: 45%;
+    position: relative;
+}
+
+.courses_box:hover {
+    transform: scale(1.05);
+}
+
+.title_text {
+    font-weight: bold;
+    font-size: 16pt;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(60%, 50%);
+}
+
+.price {
+    float: right;
+}
+
+.upcoming {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/*SCREEN RELATIVITY*/
+@media screen and (max-width: 920px) {
+    .courses_box {
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
