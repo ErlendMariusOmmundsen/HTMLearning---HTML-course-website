@@ -6,8 +6,6 @@ html{
 body{
   height: 1800px;
   background: #DEF2F1;
-  margin: 0;
-  padding: 0;
 }
 
 /*NAVIGASJONSBAR*/
@@ -17,7 +15,9 @@ body{
   background-color: #3AAFA9;
   margin-top: 100vh;
   z-index: 998;
-  width: 100%;
+  margin-left: -1%;
+  width: 101.6%;
+  top: 0;
 }
 
 
@@ -160,9 +160,13 @@ h2 {
     color: #FEFFFF;
 }
 
-#second_content {
-    float: right;
-    margin-right: 15%;
+#first_content{
+  margin-top: 100px;
+}
+
+#second_content{
+  float: right;
+  margin-right: 15%;
 }
 
 #third_content {
