@@ -1,37 +1,127 @@
-:root {
-    --white-color: #FEFFFF;
-    --light-color: #DEF2F1;
-    --navbar-color: #3AAFA9;
-    --middle-color: #2B7A78;
-    --button-color: #3A5d69;
-    --dark-color: #17252A;
-}
-
 body {
-    margin: auto;
-html{
-  scroll-behavior: smooth;
-  padding: 0;
   margin: 0;
-}
-body{
-  height: 100%;
-  background: #DEF2F1;
-  padding: 0;
-  margin: 0;
+  background-color: #DEF2F1;
 }
 
-/*FONTS*/
+img {
+  vertical-align: middle;
+}
 
+/*Fonts*/
 *{
   font-family: Roboto;
+  box-sizing: border-box;
 }
 
 h1, h2, h3{
   font-family: Muli;
 }
 
-/*NAVBAR*/
+/*LECTURERS STYLE*/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  width: 80%;
+  min-height: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  background-color: #3a5d69;
+  min-height: 400px;
+}
+
+.lecturerinfo{
+	width: 50%;
+	float: right;
+	text-align: center;
+	color: #FEFFFF;
+}
+
+.lecturerimg{
+	width: 50%;
+}
+
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/*NAVBAR STYLE*/
 #nav_bar{
   position: fixed;
   top: 0px;
@@ -75,171 +165,101 @@ h1, h2, h3{
     float: left;
   }
 
-/*FRONTPAGE*/
-  /*WELCOME*/
-#welcome_element{
-  position: absolute;
-  background-color: #3AAFA9;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
 
-#logo_img{
-  display: block;
+
+/*ABOUT US STYLE*/
+
+
+#about_div{
   margin: auto;
-  margin-top: 35vh;
+  margin-top: 140px;
+  width: 700px;
+  margin-bottom: 50px;
+  text-align: center;
 }
+    #about_div h1{
+      margin-bottom: 30px;
+    }
 
-
-#learn_element{
+#stuffs{
   display: block;
+  width: 820px;
   margin: auto;
-  margin-top: 35px;
-  font-family: Muli;
-  background-color: #3a5d69;
-  border: 0;
-  padding: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 10px;
-  color: #FEFFFF;
-  font-size: 20px;
-  transition: all ease-out 0.25s;
+  margin-top: 100px;
 }
 
-#learn_element:hover{
-  background-color: #17252A;
-  font-size: 21px;
-  padding: 12px;
-  padding-left: 27px;
-  padding-right: 27px;
-}
+  #aim_div{
+    margin-bottom: 30px;
+    margin-left: 60px;
+    float: right;
+    width: 350px;
+    height: 350px;
+    background-color: #DEF2F1;
+  }
+    #aim_text, #aim_headline{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
 
-#arrow_img{
-  display: block;
-  margin: auto;
-  width: 60px;
-  left: 45%;
-  margin-top: 30vh;
-  transition: 0.3s;
-  z-index: 999;
-}
+    #aim_text{
+      font-size: 17px;
+    }
 
-#arrow_img:hover{
-  display: block;
-  margin: auto;
-  margin-top: 28vh;
-}
-
-#welcome_info{
-  width: 100%;
-  height: 800px;
-  margin-top: 20px;
-}
-
-.content{
-  background-color: #3a5d69;
-  width: 55%;
-  height: 35%;
-  padding: 40px;
-  margin-left: 15%;
-  margin-top: 150px;
-}
-
-
-#happy_element, #happy_element3{
-  position: relative;
+#picture_div{
   float: right;
-  margin-right: -35%;
-  padding: 20px;
+  right: 20px:
 }
+  #work_big_img{
+    width: 400px;
+  }
+  #work_smaller1_img{
+    width: 198px;
+  }
+  #work_smaller2_img{
+    width: 198px;
+  }
 
-#happy_element2{
+#all_lecturers{
   position: relative;
-  float: left;
-  margin-left: -35%;
-  padding: 40px;
+  display: block;
+  width: 1000px;
+  height: 900px;
+  margin: auto;
+  margin-top: 500px;
 }
 
-#first_content, #second_content, #third_content{
-  font-family: Roboto;
-  background-color: #3a5d69;
-  color: #FEFFFF;
-}
+  .lecturer{
+    float: left;
+    width: 260px;
+    height: 300px;
+    margin: 30px;
+    margin-top: 100px;
+    background-color:  #AEB6BF;
+    transition: all 0.4s ease-out;
+    transition: all 0.4s ease-in;
+    border-radius: 8px;
+  }
 
-#second_content{
-  float: right;
-  margin-right: 15%;
-}
+    .lecturer:hover{
+      transform: scale(1.15);
+    }
 
-#third_content{
-  margin-top: 660px;
-}
-
-/*FOOTER*/
-footer {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	background: #17252A;
-	bottom: 0;
-	width: 100%;
-	height: 280px;
-	font-family: roboto, serif;
-}
-
-#info{
-	width: 380px;
-	margin-left: 80px;
-	text-align: center;
-}
-.icon{
-	position: absolute;
-	width: 35px;
-	height: 35px;
-	margin: auto;
-}
-.grid-container {
-	display: grid;
-	grid: 25px / auto auto;
-	grid-gap: 25px;
-	padding: 10px;
-	margin-left: -30px;
-}
-
-.item2, .item4, .item6{
-	margin-top: 8px;
-	text-align: left;
-}
-
-.grid-container2 {
-	display: grid;
-	grid: 25px / auto auto;
-	grid-gap: 25px;
-	padding: 10px;
-}
+    .lecturer img{
+      display: block;
+      width: 130px;
+      border-radius: 50%;
+      margin: auto;
+      margin-top: -50px;
+    }
+    .lecturer h3, p{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
 
-#map{
-	position: absolute;
-	width: 380px;
-	top: 20px;
-	left: 570px;
-}
-
-a:link{
-	color:#2b7a78;
-}
-
-a:hover{
-	color:#3aafa9;
-}
-
-/*LOGIN*/
-
-input {
+ /*LOGIN STYLE*/
+ 
+ input {
   background-color: #d3d3d3;
   width: 40%;
   height: 2em;
@@ -260,7 +280,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     opacity: 1; /* Firefox */
 }
 
-.topbutton > p {
+ .topbutton > p {
   text-align: center;
   vertical-align: middle;
 }
@@ -280,6 +300,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   width: 50%;
   height: 50%;
   margin: auto;
+  margin-top: 150px;
 }
 
 .whitebox > p {
@@ -308,10 +329,237 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 }
 
 
+/*COURSES OVERVIEW*/
+.courses_box {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px;
+    width: 45%;
+    position: relative;
+}
+
+.courses_box:hover {
+    transform: scale(1.05);
+}
+
+.title_text {
+    font-weight: bold;
+    font-size: 16pt;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(60%, 50%);
+}
+
+.price {
+    float: right;
+}
+
+.upcoming {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/*COURSE STYLE*/
+.heading_box {
+    background-color: var(--navbar-color);
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 26pt;
+    position: relative;
+}
+
+.heading_box > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading_box > img {
+    padding-left: 10px;
+}
+
+table {
+    margin: 0;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--navbar-color);
+    color: var(--white-color);
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#about_box {
+    float: left;
+}
+
+#info_bar {
+    float: right;
+}
+
+#info_box::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.review_box {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    padding: 10px;
+}
+
+.review_box > p {
+    padding-left: 20px;
+}
+
+#all_reviews_box {
+    display: none;
+}
+
+/*FAQ/HELP STYLE*/
+.faq {
+  margin-left: 10%;
+}
+
+.faqanswer {
+  display: none;
+}
+
+.faqanswer.open {
+  display: block;
+} 
+
+.faqquestion > h2:hover {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+/*QUIZ STYLE*/
+#quiz_box {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.question {
+    font-size: 140%;
+}
+
+.answers {
+    padding: 2em;
+    width: 100%;
+}
+
+#back_and_forth_box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ /*FOOTER STYLE*/ 
+
+#container {
+	position: relative;
+	min-height: 100vh;
+}	
+
+#content-wrap{
+	padding-bottom: 240px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 240px;
+	background: #17252A;
+}
+
+#info{
+	position: absolute;
+	width: 380px;
+	margin-left: 80px;
+	min-height: 200px;
+	top: 20px;
+	text-align: center;
+}
+.icon{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	margin: auto;
+}
+.grid-container {
+	display: grid;
+	grid: 20px / auto auto;
+	grid-gap: 15px;
+	padding: 10px;
+}
+
+#links {
+	position: absolute;
+	width: 380px;
+	top: 20px;
+	left: 570px;
+}
+
+.item2, .item4, .item6{
+	margin-top: 8px;
+	text-align: left;
+}
 
 
 
-@media screen and (max-width: 920px) {
-  #logo_element {
+#map{
+	position: absolute;
+	width: 380px;
+	top: 20px;
+	right: 80px;
+}
+
+a:link{
+	color:#2b7a78;
+}
+
+a:hover{
+	color:#3aafa9;
+}
+
+
+
+/*SCREEN RELATIVITY*/
+@media screen and (max-width: 1040px) {
+  #logo_element, #map, .row, .lecturerimg, #info {
     display: none;
   }
+  .lecturerinfo{
+	  width: 100%;
+	  float: none;
+  }
+  #links{
+	  left: 0;
+  } 
+	.courses_box {
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}	 
