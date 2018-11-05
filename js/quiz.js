@@ -17,6 +17,7 @@ function buildQuiz(questions_list) {
     const quiz_container = document.getElementById('quiz_box');
     const next_button = document.getElementById('next_question');
     const prev_button = document.getElementById('previous_question');
+    const restart_button = document.getElementById('restart_button');
     const question_length = questions_list.length;
     let question_counter = 0;
     let user_selections = [];
@@ -78,9 +79,11 @@ function buildQuiz(questions_list) {
         if (question_counter === question_length) {
             showResults();
             next_button.style.display = 'none';
+            restart_button.style.display = 'inline-block';
         } else {
             showQuestion(question_counter);
             next_button.style.display = 'inline-block';
+            restart_button.style.display = 'none';
         }
         drawProgress();
     };

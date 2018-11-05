@@ -22,6 +22,7 @@
         <div id="back_and_forth_box">
             <button id="previous_question">Previous question</button>
             <button id="next_question">Next question</button>
+            <button onclick="window.location.reload()" id="restart_button">Start again</button>
         </div>
         <div id="progress_bar">
             <canvas id="progress_canvas"></canvas>
@@ -29,8 +30,8 @@
     </div>
     <div id="placeholder-footer"></div>
     <script src="js/quiz.js"></script>
+    <script>
+        setAll();
+    </script>
 </body>
-<script>
-    setAll();
-</script>
 </html>
