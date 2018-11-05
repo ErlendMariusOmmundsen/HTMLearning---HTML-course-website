@@ -1,20 +1,11 @@
-.heading_box {
+#heading_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--navbar-color);
     color: var(--white-color);
     font-weight: bold;
     font-size: 26pt;
-    position: relative;
-}
-
-.heading_box > span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.heading_box > img {
-    padding-left: 10px;
 }
 
 table {
@@ -33,18 +24,9 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
-#about_box {
-    float: left;
-}
-
-#info_bar {
-    float: right;
-}
-
-#info_box::after {
-    content: "";
-    clear: both;
-    display: table;
+#info_box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .review_box {
