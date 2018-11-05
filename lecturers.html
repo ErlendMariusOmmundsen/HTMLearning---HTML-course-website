@@ -1,19 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Lecturers</title>
-<meta charset="UTF-8">
-
+	<title>Lecturers</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/lecturers.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="js/includeHTML.js"></script>
 </head>
 <body>
+<div id="placeholder-navbar"></div>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img/lecturer.jpeg" style="width:50%">
+	<div class="lecturerinfo">
+	<h2> Gunnar Sønstebygd </h2>
+	<p> CEO of HTMLearning. Age: 46 </p>
+	</div>
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/lecturer2.jpeg" style="width:50%">
+	<div class="lecturerinfo"></div>
+  </div>
 
-<footer>
-<div w3-include-html="footer.html"></div> 
-</footer>
-<script src="js/includeHTML.js"></script>
-<script>includeHTML();</script>
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/lecturer3.jpeg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/lecturer4.jpeg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img/lecturer5.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img/lecturer6.jpg" style="width:50%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">Prev</a>
+  <a class="next" onclick="plusSlides(1)">Next</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/lecturer.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Gunnar Sønstebygd">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/lecturer2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Sylvi Kvisthaug">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/lecturer3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Jahn Steigen">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/lecturer4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Odd Karsten Tvedt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/lecturer5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nadia Hasoui">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/lecturer6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Sissel Kyrkjemø">
+    </div>
+  </div>
+</div>
+<script src="js/lecturer.js"></script>
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+</script>
+</body>
+<footer id="placeholder-footer"></footer>
+<script>
+	setAll();
+</script>
 <script src="js/maps.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
-</body>
+
+
 </html>

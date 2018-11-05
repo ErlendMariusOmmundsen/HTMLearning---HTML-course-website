@@ -6,6 +6,8 @@ html{
 body{
   height: 1800px;
   background: #DEF2F1;
+  margin: 0;
+  padding: 0;
 }
 
 /*NAVIGASJONSBAR*/
@@ -200,10 +202,6 @@ footer {
 	font-family: roboto, serif;
 }
 
-#content{
-	position: absolute;
-	bottom: 0;
-}
 
 #info{
 	width: 380px;

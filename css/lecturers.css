@@ -1,0 +1,335 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  width: 80%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  background-color: #3a5d69;
+}
+
+.lecturerinfo{
+	font-family: roboto;
+	width: 50%;
+	float: right;
+	text-align: center;
+	color: #FEFFFF;
+	
+}
+
+h2.lecturerinfo{
+	font-family: muli;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/*NAVBAR*/
+#nav_bar{
+  position: fixed;
+  top: 0px;
+  margin-left: -8px;
+  height: 100px;
+  width: 100%;
+  background-color: #3AAFA9;
+  z-index: 999;
+}
+
+    #nav_bar button{
+      font-family: Muli;
+      display: inline-block;
+      background: transparent;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      color: #17252A;
+      border-radius: 2px;
+      padding: 0.5% 2% 0.5%;
+      transition: all 0.2s ease-out;
+      transition: all 0.15s ease-in;
+      background: linear-gradient(270deg, #3a5d69, #17252A, rgba(34,34,34,0), rgba(34,34,34,0));
+      background-position: 1% 50%;
+      background-size: 300% 300%;
+      margin-left: 20px;
+      margin-top: 35px;
+      border: 1px solid #17252A;
+    }
+
+    #nav_bar button:hover{
+      border: 1px solid rgba(223,190,106,0);
+      color: #FEFFFF;
+      background-position: 99% 50%;
+    }
+
+  #logo_element{
+    width: 340px;
+    margin-top: 17px;
+    float: left;
+  }
+
+/*Fonts*/
+*{
+  font-family: Roboto;
+}
+
+h1, h2, h3{
+  font-family: Muli;
+}
+
+/*ABOUT US*/
+body{
+  background-color: #DEF2F1;
+}
+
+#about_div{
+  margin: auto;
+  margin-top: 140px;
+  width: 700px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+    #about_div h1{
+      margin-bottom: 30px;
+    }
+
+#stuffs{
+  display: block;
+  width: 820px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+  #aim_div{
+    margin-bottom: 30px;
+    margin-left: 60px;
+    float: right;
+    width: 350px;
+    height: 350px;
+    background-color: #DEF2F1;
+  }
+    #aim_text, #aim_headline{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    #aim_text{
+      font-size: 17px;
+    }
+
+#picture_div{
+  float: right;
+  right: 20px:
+}
+  #work_big_img{
+    width: 400px;
+  }
+  #work_smaller1_img{
+    width: 198px;
+  }
+  #work_smaller2_img{
+    width: 198px;
+  }
+
+#all_lecturers{
+  position: relative;
+  display: block;
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+  margin-top: 500px;
+}
+
+  .lecturer{
+    float: left;
+    width: 260px;
+    height: 300px;
+    margin: 30px;
+    margin-top: 100px;
+    background-color:  #AEB6BF;
+    transition: all 0.4s ease-out;
+    transition: all 0.4s ease-in;
+    border-radius: 8px;
+  }
+
+    .lecturer:hover{
+      transform: scale(1.15);
+    }
+
+    .lecturer img{
+      display: block;
+      width: 130px;
+      border-radius: 50%;
+      margin: auto;
+      margin-top: -50px;
+    }
+    .lecturer h3, p{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+ /*FOOTER*/ 
+ footer {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background: #17252A;
+	width: 100%;
+	height: 280px;
+	font-family: roboto, serif;
+}
+
+
+#info{
+	width: 380px;
+	margin-left: 80px;
+	text-align: center;
+}
+.icon{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	margin: auto;
+}
+.grid-container {
+	display: grid;
+	grid: 25px / auto auto;
+	grid-gap: 25px;
+	padding: 10px;
+	margin-left: -30px;
+}
+
+.item2, .item4, .item6{
+	margin-top: 8px;
+	text-align: left;
+}
+
+.grid-container2 {
+	display: grid;
+	grid: 25px / auto auto;
+	grid-gap: 25px;
+	padding: 10px;
+}
+
+
+#map{
+	position: absolute;
+	width: 380px;
+	top: 20px;
+	left: 570px;
+}
+
+a:link{
+	color:#2b7a78;
+}
+
+a:hover{
+	color:#3aafa9;
+}
+
+
+
+/*SCREEN RELATIVITY*/
+@media screen and (max-width: 1040px) {
+  #logo_element {
+    display: none;
+  }
+
+@media screen and (max-width: 1040px) {
+  #logo_element {
+    display: none;
+  }
+ 
+
