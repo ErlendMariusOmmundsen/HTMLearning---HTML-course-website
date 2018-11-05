@@ -6,6 +6,8 @@ html{
 body{
   height: 1800px;
   background: #DEF2F1;
+  padding: 0;
+  margin: 0;
 }
 
 /*NAVIGASJONSBAR*/
@@ -15,8 +17,7 @@ body{
   background-color: #3AAFA9;
   margin-top: 100vh;
   z-index: 998;
-  margin-left: -1%;
-  width: 101.6%;
+  width: 100%;
   top: 0;
 }
 
@@ -118,7 +119,6 @@ button:hover {
 
 #welcome_info {
     width: 100%;
-    height: 800px;
     margin-top: 20px;
 }
 
@@ -198,20 +198,33 @@ h2 {
 }
 
 /*FOOTER*/
-footer {
+
+#container {
 	position: relative;
-	margin: 0;
+	min-height: 100vh;
+}	
+
+#content-wrap{
+	padding-bottom: 240px;
+}
+footer{
 	padding: 0;
-	background: #17252A;
+	margin: 0;
+}
+#footer {
+	position: relative;
+	bottom: 0;
 	width: 100%;
-	height: 280px;
-	font-family: roboto, serif;
+	height: 240px;
+	background: #17252A;
 }
 
-
 #info{
+	position: absolute;
 	width: 380px;
 	margin-left: 80px;
+	min-height: 200px;
+	top: 20px;
 	text-align: center;
 }
 .icon{
@@ -222,10 +235,16 @@ footer {
 }
 .grid-container {
 	display: grid;
-	grid: 25px / auto auto;
-	grid-gap: 25px;
+	grid: 20px / auto auto;
+	grid-gap: 15px;
 	padding: 10px;
-	margin-left: -30px;
+}
+
+#links {
+	position: absolute;
+	width: 380px;
+	top: 20px;
+	left: 570px;
 }
 
 .item2, .item4, .item6{
@@ -233,19 +252,13 @@ footer {
 	text-align: left;
 }
 
-.grid-container2 {
-	display: grid;
-	grid: 25px / auto auto;
-	grid-gap: 25px;
-	padding: 10px;
-}
 
 
 #map{
 	position: absolute;
 	width: 380px;
 	top: 20px;
-	left: 570px;
+	right: 80px;
 }
 
 a:link{

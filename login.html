@@ -10,7 +10,9 @@
     <script src="js/includeHTML.js"></script>
   </head>
   <body>
+	<div id="container">
     <div id="placeholder-navbar"></div> 
+	<div id="content-wrap" class="container">
     <div id="loginbox" class="whitebox">
       <div class="topbutton gray" onclick="showSignup()"><p>Sign up</p></div>
       <div class="topbutton"><p>Login</p></div>
@@ -39,8 +41,10 @@
         <input class="signbtn" type="button" onclick="validateSignup()" value="Sign up">
       </form>
     </div>
-  </body> 
+	</div>
   <footer id="placeholder-footer"></footer>
+  </div>
+  </body>
   <script>
     setAll();
   </script> 

@@ -4,16 +4,16 @@
   <head>
     <title>HTML for the working man</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/course.css" media="screen" />
 	<link rel="stylesheet" href="../css/lecturers.css" media="screen" />
-	<script src="js/includeHTML.js"></script>
+	<script src="../js/includeHTML.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
 
   <body>
+	<div id="container">
     <div id="placeholder-navbar"></div>
-    <div class="coursecontainer">
+    <div id="content-wrap" class="container">
         <div class="heading_box">
             <img src="../img/html.png" alt="HTML5 icon">
             <span>for the working man</span>
@@ -93,14 +93,16 @@
             </div>
         </div>
     </div>
+	<footer id="placeholder-footer"></footer>
+	</div>
     <script src="../js/courses.js"></script>
 </body>
-<footer id="placeholder-footer"></footer>
+
 <script>
     let inside_folder = true;
     setAll();
 </script>
-<script src="js/maps.js"></script>
+<script src="../js/maps.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
 
 </html>
