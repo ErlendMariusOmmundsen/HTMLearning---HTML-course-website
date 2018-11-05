@@ -3,18 +3,19 @@
 
 <head>
     <title>Courses overview</title>
-    <meta charset=utf-8 />
-    <link rel="stylesheet" href="css/main.css" media="screen" />
-    <link rel="stylesheet" href="css/frontpage_style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/courses_overview.css" media="screen" />
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/lecturers.css" media="screen">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="js/includeHTML.js"></script>
 </head>
 
 <body>
     <!-- Include footer -->
     <div id="placeholder-navbar"></div>
     <!-- Hard to when it gets smaller, easy fix would be to merely remove img when too small -->
-    <div class="container">
+    <div class="overviewcontainer">
         <a class="courses_box" href="courses/html_working_man.html">
             <span class="price">Price 100,- NOK</span>
             <img src="img/html.png" alt="HTML5 icon">
@@ -40,12 +41,12 @@
             <span class="upcoming">Next course: <br /> 20/10/18 from 10:00 to 12:00</span>
         </a>
     </div>
-    <footer id="placeholder-footer"></footer>
 </body>
-<script src="js/includeHTML.js"></script>
+<footer id="placeholder-footer"></footer>
 <script>
     setAll();
-
 </script>
+<script src="js/maps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
 
 </html>

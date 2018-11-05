@@ -24,6 +24,7 @@ h1, h2, h3{
   margin: auto;
   margin-top: 100px;
   width: 80%;
+  min-height: 100%;
 }
 
 /* Hide the images by default */
@@ -44,9 +45,7 @@ h1, h2, h3{
 	width: 50%;
 }
 
-h2.lecturerinfo{
-	font-family: muli;
-}
+
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
@@ -334,6 +333,127 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 }
 
 
+/*COURSES OVERVIEW*/
+.courses_box {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px;
+    width: 45%;
+    position: relative;
+}
+
+.courses_box:hover {
+    transform: scale(1.05);
+}
+
+.title_text {
+    font-weight: bold;
+    font-size: 16pt;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(60%, 50%);
+}
+
+.price {
+    float: right;
+}
+
+.upcoming {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/*COURSE STYLE*/
+.heading_box {
+    background-color: var(--navbar-color);
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 26pt;
+    position: relative;
+}
+
+.heading_box > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading_box > img {
+    padding-left: 10px;
+}
+
+table {
+    margin: 0;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--navbar-color);
+    color: var(--white-color);
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#about_box {
+    float: left;
+}
+
+#info_bar {
+    float: right;
+}
+
+#info_box::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.review_box {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    padding: 10px;
+}
+
+.review_box > p {
+    padding-left: 20px;
+}
+
+#all_reviews_box {
+    display: none;
+}
+
+/*FAQ/HELP STYLE*/
+.faq {
+  margin-left: 10%;
+}
+
+.faqanswer {
+  display: none;
+}
+
+.faqanswer.open {
+  display: block;
+} 
+
+.faqquestion > h2:hover {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+
+
  /*FOOTER STYLE*/ 
  footer {
 	position: relative;
@@ -407,4 +527,12 @@ a:hover{
   }
   #links{
 	  left: 0;
-	  }
+  } 
+	.courses_box {
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}	 
