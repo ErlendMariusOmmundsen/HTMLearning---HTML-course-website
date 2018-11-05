@@ -1,0 +1,30 @@
+#nav_bar {
+    margin-top: 0px;
+}
+
+body {
+    background: #50d8b6;
+    height: 100%;
+}
+
+#quiz_box {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.question {
+    font-size: 140%;
+}
+
+.answers {
+    padding: 2em;
+    width: 100%;
+}
+
+#back_and_forth_box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
