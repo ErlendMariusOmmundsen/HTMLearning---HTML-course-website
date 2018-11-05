@@ -41,7 +41,7 @@ function validateSignup() {
   ) {
     if (passwordsignup.value === passwordconf.value) {
       alert("You are now registered.");
-      window.location.replace("courses_overview.html");
+      window.location.replace("login.html");
     } else {
       alert("The passwords entered do not match.");
     }
