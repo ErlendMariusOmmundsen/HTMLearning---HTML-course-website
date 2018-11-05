@@ -15,6 +15,7 @@ function buildQuiz(questions_list) {
     const quiz_container = document.getElementById('quiz_box');
     const next_button = document.getElementById('next_question');
     const prev_button = document.getElementById('previous_question');
+    const question_length = questions_list.length;
     let question_counter = 0;
     let user_selections = [];
 
@@ -35,19 +36,19 @@ function buildQuiz(questions_list) {
 
     function showResults() {
         let results = 0;
-        for (let i = 0; i < questions_list.length; i++) {
+        for (let i = 0; i < question_length; i++) {
             if (questions_list[i].correct_answer === user_selections[i]) {
                 results++;
             }
         }
         let additional;
 
-        if (results > Math.ceil(questions_list.length / 2)) {
+        if (results > Math.ceil(question_length / 2)) {
             additional = 'Good job! You know alot of what this course covers already.';
         } else {
             additional = 'This was a bit hard for you, you might have need of this course.'
         }
-        quiz_container.innerHTML = '<p>Quiz finished!</p> <p>Your score is ' + results + '/' + questions_list.length + '</p> <p>' + additional + '</p>';
+        quiz_container.innerHTML = '<p>Quiz finished!</p> <p>Your score is ' + results + '/' + question_length + '</p> <p>' + additional + '</p>';
     };
 
     function saveChoice() {
@@ -55,7 +56,7 @@ function buildQuiz(questions_list) {
     }
 
     function showNext() {
-        if (question_counter === questions_list.length) {
+        if (question_counter === question_length) {
             showResults();
             next_button.style.display = 'none';
         } else {
@@ -96,6 +97,11 @@ function buildQuiz(questions_list) {
     context.canvas.height = window.innerHeight * 0.2;
     let centerY = canvas.height / 2;
     context.lineWidth = 2;
+    var qlength = 25 + 100 * question_length - 50;
+    var scalefactor = (window.innerWidth - 100) / qlength;
+    if (scalefactor < 1) {
+      context.scale(scalefactor, scalefactor);
+    }
 
     function drawLine(fromX, toX) {
         context.beginPath();
@@ -113,8 +119,12 @@ function buildQuiz(questions_list) {
         context.stroke();
     }
 
-    drawCircle(50, 25);
-    drawLine(50 + 25, 50 + 25 + 50);
+
+    for (let i = 0; i < question_length - 1; ++i) {
+      drawCircle(50+100*i, 25);
+      drawLine(50+100*i+25, 50+100*i + 75);
+    }
+    drawCircle(50+100*(question_length-1), 25);
 
     function drawProgress() {}
 }
