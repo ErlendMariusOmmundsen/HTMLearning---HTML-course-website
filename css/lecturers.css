@@ -1,16 +1,23 @@
 body {
-  font-family: Arial;
   margin: 0;
-}
-
-* {
-  box-sizing: border-box;
+  background-color: #DEF2F1;
 }
 
 img {
   vertical-align: middle;
 }
 
+/*Fonts*/
+*{
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+
+h1, h2, h3{
+  font-family: Muli;
+}
+
+/*LECTURERS STYLE*/
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
@@ -23,15 +30,18 @@ img {
 .mySlides {
   display: none;
   background-color: #3a5d69;
+  min-height: 400px;
 }
 
 .lecturerinfo{
-	font-family: roboto;
 	width: 50%;
 	float: right;
 	text-align: center;
 	color: #FEFFFF;
-	
+}
+
+.lecturerimg{
+	width: 50%;
 }
 
 h2.lecturerinfo{
@@ -112,7 +122,7 @@ h2.lecturerinfo{
 }
 
 
-/*NAVBAR*/
+/*NAVBAR STYLE*/
 #nav_bar{
   position: fixed;
   top: 0px;
@@ -156,19 +166,10 @@ h2.lecturerinfo{
     float: left;
   }
 
-/*Fonts*/
-*{
-  font-family: Roboto;
-}
 
-h1, h2, h3{
-  font-family: Muli;
-}
 
-/*ABOUT US*/
-body{
-  background-color: #DEF2F1;
-}
+/*ABOUT US STYLE*/
+
 
 #about_div{
   margin: auto;
@@ -260,21 +261,95 @@ body{
         display: none;
     }
 
- /*FOOTER*/ 
+
+ /*LOGIN STYLE*/
+ 
+ input {
+  background-color: #d3d3d3;
+  width: 40%;
+  height: 2em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+input.long {
+  background-color: #d3d3d3;
+  height: 2em;
+  margin-bottom: 1em;
+  width: 84.5%;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+ .topbutton > p {
+  text-align: center;
+  vertical-align: middle;
+}
+.topbutton {
+  width: 50%;
+  height: 4em;
+  float: right;
+  margin-bottom: 2em;
+}
+
+.topbutton.gray {
+  background-color: #c4c4c4;
+}
+
+.whitebox {
+  background-color: #ffffff;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.whitebox > p {
+  margin-left: 4em;
+  font-size: 140%;
+}
+
+.whitebox > form {
+  text-align: center;
+  width: 100%;
+}
+
+.signbtn {
+  background-color: #17252a;
+  color: #ffffff;
+  border: none;
+  width: 20em;
+  height: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+/* Initially hidden */
+#signupbox {
+  display: none;
+}
+
+
+ /*FOOTER STYLE*/ 
  footer {
 	position: relative;
 	margin: 0;
 	padding: 0;
 	background: #17252A;
 	width: 100%;
-	height: 280px;
-	font-family: roboto, serif;
-}
+	height: 240px;
+ }
 
 
 #info{
 	width: 380px;
 	margin-left: 80px;
+	min-height: 200px;
+	top: 20px;
 	text-align: center;
 }
 .icon{
@@ -285,10 +360,16 @@ body{
 }
 .grid-container {
 	display: grid;
-	grid: 25px / auto auto;
-	grid-gap: 25px;
+	grid: 20px / auto auto;
+	grid-gap: 15px;
 	padding: 10px;
-	margin-left: -30px;
+}
+
+#links {
+	position: absolute;
+	width: 380px;
+	top: 20px;
+	left: 570px;
 }
 
 .item2, .item4, .item6{
@@ -296,19 +377,13 @@ body{
 	text-align: left;
 }
 
-.grid-container2 {
-	display: grid;
-	grid: 25px / auto auto;
-	grid-gap: 25px;
-	padding: 10px;
-}
 
 
 #map{
 	position: absolute;
 	width: 380px;
 	top: 20px;
-	left: 570px;
+	right: 80px;
 }
 
 a:link{
@@ -323,13 +398,13 @@ a:hover{
 
 /*SCREEN RELATIVITY*/
 @media screen and (max-width: 1040px) {
-  #logo_element {
+  #logo_element, #map, .row, .lecturerimg, #info {
     display: none;
   }
-
-@media screen and (max-width: 1040px) {
-  #logo_element {
-    display: none;
+  .lecturerinfo{
+	  width: 100%;
+	  float: none;
   }
- 
-
+  #links{
+	  left: 0;
+	  }
