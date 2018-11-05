@@ -1,6 +1,19 @@
-{
- "a1": "Alternative 1",
- "a2": "Alternative 2",
- "a3": "Alternative 3",
- "a4": "Alternative 4"
-}
+[{
+    "question": "Which tag would you use to make a heading for your tablerows?",
+    "answers": {
+        "a": "&lth1&gt",
+        "b": "&lttd&gt",
+        "c": "&ltth&gt",
+        "d": "&lttablehead&gt"
+    },
+    "correct_answer": "c"
+}, {
+    "question": "How would you submit a form?",
+    "answers": {
+        "a": "With input type submit",
+        "b": "With a button with id submit",
+        "c": "With a method declaration",
+        "d": "With a buttom with name submit"
+    },
+    "correct_answer": "a"
+}]
