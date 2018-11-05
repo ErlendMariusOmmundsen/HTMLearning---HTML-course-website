@@ -138,6 +138,7 @@ button:hover {
     float: right;
     margin-right: -35%;
     padding: 20px;
+    width: 55%;
 }
 
 #happy_element2{
@@ -146,6 +147,7 @@ button:hover {
   margin-left: -35%;
   padding: 40px;
   margin-top: -20px;
+  width: 55%;
 }
 
 h2 {

@@ -1,5 +1,5 @@
 #nav_bar{
-  margin-top: 0px;
+  margin-top: -10px;
 }
 
 body {
@@ -17,9 +17,6 @@ input {
 }
 
 input.long {
-  background-color: #d3d3d3;
-  height: 2em;
-  margin-bottom: 1em;
   width: 84.5%;
 }
 
