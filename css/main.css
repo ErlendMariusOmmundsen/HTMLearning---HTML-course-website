@@ -331,8 +331,8 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 /*COURSES OVERVIEW*/
 .courses_box {
-    background-color: var(--button-color);
-    color: var(--white-color);
+    background-color: #3a5d69;
+    color: #FEFFFF;
     display: block;
     float: left;
     box-sizing: border-box;
@@ -367,8 +367,8 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 /*COURSE STYLE*/
 .heading_box {
-    background-color: var(--navbar-color);
-    color: var(--white-color);
+    background-color: #3a5d69;
+    color: #FEFFFF;
     font-weight: bold;
     font-size: 26pt;
     position: relative;
@@ -391,8 +391,8 @@ table {
 }
 
 th {
-    background-color: var(--navbar-color);
-    color: var(--white-color);
+    background-color: #3AAFA9;
+    color: #FEFFFF;
 }
 
 th,
