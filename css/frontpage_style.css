@@ -1,20 +1,21 @@
 html {
     scroll-behavior: smooth;
 }
-
-body {
-    height: 1500px;
+body{
+  height: 1800px;
+  background: #DEF2F1;
 }
 
 /*NAVIGASJONSBAR*/
-#nav_bar {
-    position: sticky;
-    height: 100px;
-    background-color: #3AAFA9;
-    margin-top: 100vh;
-    z-index: 998;
-    margin-left: -1%;
-    width: 101.6%;
+#nav_bar{
+  position: sticky;
+  height: 100px;
+  background-color: #3AAFA9;
+  margin-top: 100vh;
+  z-index: 998;
+  margin-left: -1%;
+  width: 101.6%;
+  top: 0;
 }
 
 
@@ -135,13 +136,16 @@ button:hover {
     float: right;
     margin-right: -35%;
     padding: 20px;
+    width: 55%;
 }
 
-#happy_element2 {
-    position: relative;
-    float: left;
-    margin-left: -35%;
-    padding: 40px;
+#happy_element2{
+  position: relative;
+  float: left;
+  margin-left: -35%;
+  padding: 40px;
+  margin-top: -20px;
+  width: 55%;
 }
 
 h2 {
@@ -156,13 +160,35 @@ h2 {
     color: #FEFFFF;
 }
 
-#second_content {
-    float: right;
-    margin-right: 15%;
+#first_content{
+  margin-top: 100px;
+}
+
+#second_content{
+  float: right;
+  margin-right: 15%;
 }
 
 #third_content {
     margin-top: 660px;
+}
+
+.content_input{
+    font-family: Muli;
+    background-color: #3AAFA9;
+    border: none;
+    padding: 10px 20px 10px;
+    transition: all 0.2s ease-out;
+    transition: all 0.15s ease-in;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    border-radius: 10px;
+}
+
+.content_input:hover{
+  color: #FEFFFF;
 }
 
 ::-webkit-scrollbar {
