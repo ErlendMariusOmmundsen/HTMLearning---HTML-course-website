@@ -1,3 +1,4 @@
+
 /** Load questions before building quiz **/
 const requestURL = 'js/quizdatabase.json';
 let request = new XMLHttpRequest();
@@ -10,6 +11,7 @@ request.onload = function () {
     buildQuiz(questions_list);
 }
 
+
 function buildQuiz(questions_list) {
 
     const quiz_container = document.getElementById('quiz_box');
@@ -19,6 +21,20 @@ function buildQuiz(questions_list) {
     let question_counter = 0;
     let user_selections = [];
 
+    /** Prepare canvas to draw progress bar on **/
+    const canvas = document.getElementById('progress_canvas');
+    const context = canvas.getContext('2d');
+    context.canvas.width = window.innerWidth;
+    context.canvas.height = window.innerHeight * 0.2;
+    let centerY = canvas.height / 2;
+    context.lineWidth = 2;
+    let qlength = 25 + 100 * question_length - 50;
+    let scalefactor = (window.innerWidth - 100) / qlength;
+    if (scalefactor < 1) {
+        context.scale(scalefactor, scalefactor);
+    }
+    
+    /** Make current question into html **/
     function showQuestion(question_index) {
         let answers = [];
         for (alt in questions_list[question_index].answers) {
@@ -32,6 +48,9 @@ function buildQuiz(questions_list) {
         }
         quiz_container.innerHTML = '<div class="question">' + questions_list[question_index].question + '</div>' +
             '<div class="answers">' + answers.join('') + '</div>';
+        if (user_selections[question_counter] !== undefined) {
+            quiz_container.querySelector('input[value=' + user_selections[question_counter] + ']').checked = true;
+        }
     };
 
     function showResults() {
@@ -62,10 +81,8 @@ function buildQuiz(questions_list) {
         } else {
             showQuestion(question_counter);
             next_button.style.display = 'inline-block';
-            if (user_selections[question_counter] !== undefined) {
-                quiz_container.querySelector('input[value=' + user_selections[question_counter] + ']').checked = true;
-            }
         }
+        drawProgress();
     };
 
     /** Initializing the question, and adding EventListeners **/
@@ -90,19 +107,7 @@ function buildQuiz(questions_list) {
         showNext();
     });
 
-    /** Drawing the progress bar using a canvas **/
-    const canvas = document.getElementById('progress_canvas');
-    const context = canvas.getContext('2d');
-    context.canvas.width = window.innerWidth;
-    context.canvas.height = window.innerHeight * 0.2;
-    let centerY = canvas.height / 2;
-    context.lineWidth = 2;
-    var qlength = 25 + 100 * question_length - 50;
-    var scalefactor = (window.innerWidth - 100) / qlength;
-    if (scalefactor < 1) {
-      context.scale(scalefactor, scalefactor);
-    }
-
+    /** Drawing the progress bar on the canvas **/
     function drawLine(fromX, toX) {
         context.beginPath();
         context.moveTo(toX, centerY);
@@ -111,20 +116,25 @@ function buildQuiz(questions_list) {
         context.stroke();
     }
 
-    function drawCircle(x, radius, color = 'lightgrey') {
+    function drawCircle(x, radius, index) {
         context.beginPath();
         context.arc(x, centerY, radius, 0, 2 * Math.PI, false);
-        context.fillStyle = color;
+        if (user_selections[index] === undefined) {
+            context.fillStyle = 'lightgrey';
+        } else if (questions_list[index].correct_answer === user_selections[index]) {
+            context.fillStyle = 'green';
+        } else {
+            context.fillStyle = 'red';
+        }
         context.fill();
         context.stroke();
     }
 
-
-    for (let i = 0; i < question_length - 1; ++i) {
-      drawCircle(50+100*i, 25);
-      drawLine(50+100*i+25, 50+100*i + 75);
+    function drawProgress() {
+        for (let i = 0; i < question_length - 1; ++i) {
+            drawCircle(50 + 100 * i, 25, i);
+            drawLine(50 + 100 * i + 25, 50 + 100 * i + 75);
+        }
+        drawCircle(50 + 100 * (question_length - 1), 25, question_length - 1);
     }
-    drawCircle(50+100*(question_length-1), 25);
-
-    function drawProgress() {}
 }
