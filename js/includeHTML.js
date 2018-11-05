@@ -6,8 +6,8 @@ function setNavbar() {
         folder_up = '../';
     };
     let navbar_html = `
-      <a href="` + folder_up + `frontpage.html"><img id="logo_element" src="` + folder_up + `img/logo.png" alt="logo"></a>
-      <button onclick="location.href='` + folder_up + `frontpage.html#nav_bar';" id="home_input" type="button" >Home</button>
+      <a href="` + folder_up + `index.html"><img id="logo_element" src="` + folder_up + `img/logo.png" alt="logo"></a>
+      <button onclick="location.href='` + folder_up + `index.html#nav_bar';" id="home_input" type="button" >Home</button>
       <button onclick="location.href='` + folder_up + `courses_overview.html';" id="courses_input" type="button" >Courses</button>
       <button onclick="location.href='` + folder_up + `help.html';" id="faq_input" type="button" >FAQ/Help</button>
       <button onclick="location.href='` + folder_up + `about.html';" id="About_input" type="button" >About us</button>
