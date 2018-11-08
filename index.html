@@ -12,36 +12,23 @@
     <div id="welcome_element">
       <img id="logo_img" src="img/logo.png" alt="Logo">
 
-      <button id="learn_element" type="button">Start Learning</button>
+      <button onclick="location.href='courses_overview.html';" id="learn_element" type="button">Start Learning</button>
       <a href="#nav_bar"><img id="arrow_img" src="img/pil.png" alt="Arrow"></a>
     </div>
+	<div id="container">
+	<div id="content-wrap">
       <div id="placeholder-navbar"></div>
-        <div id="menuToggle">
-          <input type="checkbox" />
-
-          <span id="span1"></span>
-          <span id="span2"></span>
-          <span id="span3"></span>
-
-          <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Info</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-          </ul>
-        </div>
       <div id="welcome_info">
         <div class="content" id="first_content">
           <img id="happy_element" src="img/course.jpg" alt="happy">
           <h2>Our Courses</h2>
           <p>If you want to learn HTML or CSS, you have come to the right place.
-             We are the best place for those who have completely new, for those
+             We are the best place for those who are completely new, for those
              who have written some code before and for those who are
              experienced.
              </p>
           <p>Click the HTML button to see our courses.</p>
-            <button class="content_input" onclick="location.href='courses_overview.html';" id="courses_input2" type="button" >Courses</button>
+            <button class="content_input" onclick="location.href='courses_overview.html';" id="courses_input" type="button" >Courses</button>
         </div>
 
         <div class="content" id="second_content">
@@ -53,7 +40,6 @@
              the main reasons why HTMLearning have become the success it is
              today. They are ready and waiting!
              <p>Click the HTML button to get more info about our lecturers.</p>
-             </p>
           <button class="content_input" onclick="location.href='about.html';" id="About_input" type="button" >About us</button>
         </div>
 
@@ -69,10 +55,27 @@
         </div>
       </div>
 
-
+	</div>
+    <footer id="placeholder-footer"></footer>
+	</div>
+    <script>
+      setAll();
+    </script>
+	<script src="js/maps.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
   </body>
-  <footer id="placeholder-footer"></footer>
-  <script>
-    setAll();
-  </script>
+        <div id="menuToggle">
+          <input type="checkbox" />
+
+          <span id="span1"></span>
+          <span id="span2"></span>
+          <span id="span3"></span>
+
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
 </html>

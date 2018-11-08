@@ -21,6 +21,7 @@ function validateLogin() {
   var password = document.getElementById("password");
   if (username.checkValidity() && password.checkValidity()) {
     alert("Successful login.");
+    window.location.replace("courses_overview.html");
   } else {
     alert("Email or password are not correct.");
   }
@@ -40,6 +41,7 @@ function validateSignup() {
   ) {
     if (passwordsignup.value === passwordconf.value) {
       alert("You are now registered.");
+      window.location.replace("login.html");
     } else {
       alert("The passwords entered do not match.");
     }

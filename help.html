@@ -4,16 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>Frequently asked questions</title>
-    <link rel="stylesheet" href="css/frontpage_style.css">
-    <link rel="stylesheet" href="css/help.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script async="async" type="text/javascript" src="js/help.js"></script>
+    <script async="async" src="js/help.js"></script>
     <script src="js/includeHTML.js"></script>
 </head>
 
-<body>
+  <body>
+  	<div id="container">
     <div id="placeholder-navbar"></div>
+	<div id="content-wrap" class="container">
     <h1>FAQ</h1>
     <div class="faq">
         <div class="faqquestion" onclick="toggleAnswer(this)">
@@ -49,17 +50,37 @@
     </div>
     <div class="faq">
         <div class="faqquestion" onclick="toggleAnswer(this)">
-            <h2>How do I boil an egg?</h2>
+            <h2>Where will the courses be?</h2>
         </div>
         <div class="faqanswer">
-            <p>5 seconds in lava.</p>
+            <p>You can find this information under each course page. Different courses could be at different locations.</p>
         </div>
     </div>
+    <div class="faq">
+        <div class="faqquestion" onclick="toggleAnswer(this)">
+            <h2>How do I sign up for a course?</h2>
+        </div>
+        <div class="faqanswer">
+            <p>First login (or register a user) then select a course and click "Register for course".</p>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="faqquestion" onclick="toggleAnswer(this)">
+            <h2>Where are your offices?</h2>
+        </div>
+        <div class="faqanswer">
+            <p>Søndre gate 4, Trondheim</p>
+        </div>
+    </div>
+	</div>
+	
     <footer id="placeholder-footer"></footer>
-</body>
+	</div>
 <script>
-    setAll();
-
+	setAll();
 </script>
+<script src="js/maps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
 
+</body>
 </html>

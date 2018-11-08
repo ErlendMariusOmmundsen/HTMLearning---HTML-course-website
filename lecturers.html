@@ -1,3 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+	<title>Lecturers</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="js/includeHTML.js"></script>
+</head>
+<body>
+	<div id="container">
+	<div id="placeholder-navbar"></div>
+	<div id="content-wrap" class="container">
+	  <div class="mySlides">
+		<div class="numbertext">1 / 6</div>
+		<img src="img/lecturer.jpeg" class="lecturerimg" alt="Picture of lecturer">
+		<div class="lecturerinfo">
+		<h2> Bob Bernt </h2>
+		<p> CEO of HTMLearning. Age: 46 </p>
+		</div>
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">2 / 6</div>
+		<img src="img/lecturer2.jpeg" class="lecturerimg" alt="Picture of lecturer">
+		<div class="lecturerinfo">
+		<h2> Ivana Kutchakakov </h2>
+		<p> Information about the lecturer </p>
+		</div>
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">3 / 6</div>
+		<img src="img/lecturer3.jpeg" class="lecturerimg" alt="Picture of lecturer">
+		<div class="lecturerinfo">
+		<h2> Andrew Kappa </h2>
+		<p> Information about the lecturer </p>
+		</div>
+	  </div>
+		
+	  <div class="mySlides">
+		<div class="numbertext">4 / 6</div>
+		<img src="img/lecturer4.jpeg" class="lecturerimg" alt="Picture of lecturer">
+		<div class="lecturerinfo">
+		<h2> Mike Hunt </h2>
+		<p> Information about the lecturer </p>
+		</div>
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">5 / 6</div>
+		<img src="img/lecturer5.jpg" class="lecturerimg" alt="Picture of lecturer">
+		<div class="lecturerinfo">
+		<h2> Jenny Tailya </h2>
+		<p> Information about the lecturer </p>
+		</div>
+	  </div>
+		
+	  <div class="mySlides">
+		<div class="numbertext">6 / 6</div>
+		<img src="img/lecturer6.jpg" class="lecturerimg" alt="Picture of lecturer">
+		<div class="lecturerinfo">
+		<h2> Dixie Enormous </h2>
+		<p> Information about the lecturer </p>
+		</div>
+	  </div>
+		
+	  <a class="prev" onclick="plusSlides(-1)">Prev</a>
+	  <a class="next" onclick="plusSlides(1)">Next</a>
+
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+
+	  <div class="row">
+		<div class="column">
+		  <img class="demo cursor" src="img/lecturer.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Bob Bernt">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="img/lecturer2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Ivana Kutchakakov">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="img/lecturer3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Andrew Kappa">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="img/lecturer4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Mike Hunt">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="img/lecturer5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Jenny Tailya">
+		</div>    
+		<div class="column">
+		  <img class="demo cursor" src="img/lecturer6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Dixie Enormous">
+		</div>
+	  </div>
+	</div>
+	<footer id="placeholder-footer"></footer>
+</div>
+<script src="js/lecturer.js"></script>
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+</script>
+
+<script>
+	setAll();
+</script>
+<script src="js/maps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
+
+
+</body>
+
 </html>

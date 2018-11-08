@@ -3,46 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>Login and registration</title>
-    <link rel="stylesheet" href="css/frontpage_style.css">
-    <link rel="stylesheet" href="css/login.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="js/login.js"></script>
     <script src="js/includeHTML.js"></script>
   </head>
   <body>
+	<div id="container">
     <div id="placeholder-navbar"></div> 
-    <div id="loginbox" class="whitebox">
-      <div class="topbutton gray" onclick="showSignup()"><p>Sign up</p></div>
-      <div class="topbutton"><p>Login</p></div>
-      <p>Login to your account</p>
-      <form id="login">
-        <input required autofocus id="username" type="email" name="user" placeholder="   E-mail address: ">
-        <br>
-        <input required id="password" minlength="4" type="password" name="password" placeholder="   Password: ">
-        <br>
-        <input class="signbtn" type="button" onclick="validateLogin()" value="Sign In">
-      </form>
+	<div id="content-wrap" class="container">
+    <div id="bound">
+      <div id="loginbox" class="whitebox">
+        <div class="topbutton gray" onclick="showSignup()"><p>Sign up</p></div>
+        <div class="topbutton"><p>Login</p></div>
+        <p>Login to your account</p>
+        <form id="login">
+          <input required autofocus id="username" type="email" name="user" placeholder="   E-mail address: ">
+          <br>
+          <input required id="password" minlength="4" type="password" name="password" placeholder="   Password: ">
+          <br>
+          <input class="signbtn" type="button" onclick="validateLogin()" value="Sign In">
+        </form>
+      </div>
+      <div id="signupbox" class="whitebox">
+        <div class="topbutton"><p>Sign up</p></div>
+        <div class="topbutton gray" onclick="showLogin()"><p>Login</p></div>
+        <p>Sign up</p>
+        <form id="signup" class="whitebox">
+          <input required id="firstname" minlength="1" type="text" name="firstname" placeholder="   First name: ">
+          <input required id="lastname" minlength="1" type="text" name="lastname" placeholder="   Last name: ">
+          <br>
+          <input required class="long" id="usernamesignup" type="email" name="user" placeholder="   E-mail address: ">
+          <br>
+          <input required id="passwordsignup" minlength="4" type="password" name="password" placeholder="   Password: ">
+          <input required id="passwordconf" minlength="4" type="password" name="passwordconf" placeholder="   Confirm password: ">
+          <br>
+          <input class="signbtn" type="button" onclick="validateSignup()" value="Sign up">
+        </form>
+      </div>
     </div>
-    <div id="signupbox" class="whitebox">
-      <div class="topbutton"><p>Sign up</p></div>
-      <div class="topbutton gray" onclick="showLogin()"><p>Login</p></div>
-      <p>Sign up</p>
-      <form id="signup" class="whitebox">
-        <input required id="firstname" minlength="1" type="text" name="firstname" placeholder="   First name: ">
-        <input required id="lastname" minlength="1" type="text" name="lastname" placeholder="   Last name: ">
-        <br>
-        <input required class="long" id="usernamesignup" type="email" name="user" placeholder="   E-mail address: ">
-        <br>
-        <input required id="passwordsignup" minlength="4" type="password" name="password" placeholder="   Password: ">
-        <input required id="passwordconf" minlength="4" type="password" name="passwordconf" placeholder="   Confirm password: ">
-        <br>
-        <input class="signbtn" type="button" onclick="validateSignup()" value="Sign up">
-      </form>
-    </div>
-  </body>
-  <div id="placeholder-footer"></div> 
+	</div>
+  <footer id="placeholder-footer"></footer>
+  </div>
   <script>
     setAll();
   </script> 
+  <script src="js/maps.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
+  </body>
 </html>
