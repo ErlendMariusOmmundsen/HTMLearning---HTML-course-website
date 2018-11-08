@@ -30,20 +30,7 @@ img {
     vertical-align: middle;
 }
 
-/**************************************************/
-/****************** NAVBAR STYLE ******************/
-/**************************************************/
-#nav_bar {
-    position: fixed;
-    top: 0px;
-    margin-left: -8px;
-    height: 100px;
-    width: 100%;
-    background-color: var(--turquoise);
-    z-index: 999;
-}
-
-#nav_bar button {
+button {
     font-family: Muli;
     display: inline-block;
     background: transparent;
@@ -59,15 +46,32 @@ img {
     background: linear-gradient(270deg, var(--dark), var(--black), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
     background-position: 1% 50%;
     background-size: 300% 300%;
-    margin-left: 20px;
-    margin-top: 35px;
     border: 1px solid var(--black);
+    margin: 20px;
 }
 
-#nav_bar button:hover {
+button:hover {
     border: 1px solid rgba(223, 190, 106, 0);
     color: var(--white);
     background-position: 99% 50%;
+}
+
+/**************************************************/
+/****************** NAVBAR STYLE ******************/
+/**************************************************/
+#nav_bar {
+    position: fixed;
+    top: 0px;
+    margin-left: -8px;
+    height: 100px;
+    width: 100%;
+    background-color: var(--turquoise);
+    z-index: 999;
+}
+
+#nav_bar button {
+    margin-left: 20px;
+    margin-top: 35px;
 }
 
 #logo_element {
