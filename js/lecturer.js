@@ -1,5 +1,4 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex;
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -27,4 +26,13 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
+function parseURL(){
+	if(window.location.hash){
+		var hash = window.location.hash.substring(1);
+		showSlides(slideIndex = hash);
+	}
+	else{
+		showSlides(slideIndex = 1);
+}
+}
   
