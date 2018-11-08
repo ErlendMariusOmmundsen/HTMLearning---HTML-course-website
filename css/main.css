@@ -9,7 +9,9 @@
     --black: #17252a;
 }
 
-/* Fonts */
+/**************************************************/
+/******************** GENERAL ********************/
+/**************************************************/
 * {
     font-family: Roboto;
     box-sizing: border-box;
@@ -30,7 +32,87 @@ img {
     vertical-align: middle;
 }
 
-/****** LECTURERS STYLE ******/
+button {
+    font-family: Muli;
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: var(--black);
+    border-radius: 2px;
+    padding: 0.5% 2% 0.5%;
+    transition: all 0.2s ease-out;
+    transition: all 0.15s ease-in;
+    background: linear-gradient(270deg, var(--dark), var(--black), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    border: 1px solid var(--black);
+    margin: 20px;
+}
+
+button:hover {
+    border: 1px solid rgba(223, 190, 106, 0);
+    color: var(--white);
+    background-position: 99% 50%;
+}
+
+input {
+    background-color: var(--grey);
+    width: 40%;
+    height: 2em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+input.long {
+    background-color: var(--grey);
+    height: 2em;
+    margin-bottom: 1em;
+    width: 84.5%;
+}
+
+input[type=radio]{
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+
+input::placeholder {
+    color: var(--black);
+    opacity: 1;
+}
+
+/**************************************************/
+/****************** NAVBAR STYLE ******************/
+/**************************************************/
+#nav_bar {
+    position: fixed;
+    top: 0px;
+    margin-left: -8px;
+    height: 100px;
+    width: 100%;
+    background-color: var(--turquoise);
+    z-index: 999;
+}
+
+#nav_bar button {
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+#logo_element {
+    width: 340px;
+    margin-top: 17px;
+    float: left;
+}
+
+
+/**************************************************/
+/**************** LECTURERS STYLE ****************/
+/*************************************************/
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
@@ -40,8 +122,9 @@ img {
     min-height: 100%;
 }
 
+/****** LECTURERS STYLE ******/
 /* Hide the images by default */
-.mySlides {
+.lecturerSlides {
     display: none;
     background-color: var(--dark);
     min-height: 400px;
@@ -58,7 +141,7 @@ img {
     width: 50%;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
+
 .cursor {
     cursor: pointer;
 }
@@ -80,13 +163,12 @@ img {
     -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Highlights buttons when hovering*/
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -101,7 +183,7 @@ img {
     top: 0;
 }
 
-/* Container for image text */
+/* Image text */
 .caption-container {
     text-align: center;
     background-color: var(--black);
@@ -132,53 +214,9 @@ img {
 }
 
 
-/****** NAVBAR STYLE ******/
-#nav_bar {
-    position: fixed;
-    top: 0px;
-    margin-left: -8px;
-    height: 100px;
-    width: 100%;
-    background-color: var(--turquoise);
-    z-index: 999;
-}
-
-#nav_bar button {
-    font-family: Muli;
-    display: inline-block;
-    background: transparent;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 0.7rem;
-    letter-spacing: 0.3em;
-    color: var(--black);
-    border-radius: 2px;
-    padding: 0.5% 2% 0.5%;
-    transition: all 0.2s ease-out;
-    transition: all 0.15s ease-in;
-    background: linear-gradient(270deg, var(--dark), var(--black), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
-    background-position: 1% 50%;
-    background-size: 300% 300%;
-    margin-left: 20px;
-    margin-top: 35px;
-    border: 1px solid var(--black);
-}
-
-#nav_bar button:hover {
-    border: 1px solid rgba(223, 190, 106, 0);
-    color: var(--white);
-    background-position: 99% 50%;
-}
-
-#logo_element {
-    width: 340px;
-    margin-top: 17px;
-    float: left;
-}
-
-
-
-/****** ABOUT US STYLE ******/
+/**************************************************/
+/***************** ABOUT US STYLE *****************/
+/**************************************************/
 #about_div {
     margin: auto;
     margin-top: 140px;
@@ -272,29 +310,9 @@ p {
     padding-right: 20px;
 }
 
-
-/****** LOGIN STYLE ******/
-input {
-    background-color: var(--grey);
-    width: 40%;
-    height: 2em;
-    margin-bottom: 1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
-input.long {
-    background-color: var(--grey);
-    height: 2em;
-    margin-bottom: 1em;
-    width: 84.5%;
-}
-
-input::placeholder {
-    color: black;
-    opacity: 1;
-}
-
+/**************************************************/
+/****************** LOGIN STYLE ******************/
+/**************************************************/
 .topbutton > p {
     text-align: center;
     vertical-align: middle;
@@ -349,8 +367,9 @@ input::placeholder {
   padding: 30px;
 }
 
-
-/****** COURSES OVERVIEW ******/
+/**************************************************/
+/**************** COURSES OVERVIEW ****************/
+/**************************************************/
 .courses_box {
     background-color: var(--dark);
     color: var(--white);
@@ -387,7 +406,9 @@ input::placeholder {
     right: 10px;
 }
 
-/****** COURSE STYLE ******/
+/**************************************************/
+/****************** COURSE STYLE ******************/
+/**************************************************/
 .heading_box {
     background-color: var(--dark);
     color: var(--white);
@@ -425,10 +446,12 @@ td {
 
 #about_box {
     float: left;
+    width: 60%;
 }
 
 #info_bar {
     float: right;
+    width: 40%;
 }
 
 #info_box::after {
@@ -442,6 +465,7 @@ td {
     border-width: 1px;
     border-color: var(--grey);
     padding: 10px;
+    margin: 20px;
 }
 
 .review_box > p {
@@ -452,7 +476,9 @@ td {
     display: none;
 }
 
-/****** FAQ/HELP STYLE ******/
+/**************************************************/
+/***************** FAQ/HELP STYLE *****************/
+/**************************************************/
 .faq {
     margin-left: 10%;
 }
@@ -470,11 +496,12 @@ td {
     text-decoration: underline;
 }
 
-/****** QUIZ STYLE ******/
+/**************************************************/
+/******************* QUIZ STYLE *******************/
+/**************************************************/
 #quiz_box {
-    width: 50%;
     height: 50%;
-    margin: auto;
+    margin-left: 20%;
     padding: 10px;
 }
 
@@ -483,7 +510,6 @@ td {
 }
 
 .answers {
-    padding: 2em;
     width: 100%;
 }
 
@@ -493,8 +519,9 @@ td {
     justify-content: space-between;
 }
 
-
-/****** FOOTER STYLE ******/
+/**************************************************/
+/****************** FOOTER STYLE ******************/
+/**************************************************/
 
 #container {
     position: relative;
@@ -507,15 +534,17 @@ td {
 
 #footer {
     position: absolute;
+	overflow: hidden;
     bottom: 0;
     width: 100%;
     height: 240px;
+	margin: auto;
     background: var(--black);
 }
 
 #info {
-    position: absolute;
-    width: 380px;
+    float: left;
+    width: 25%;
     margin-left: 80px;
     min-height: 200px;
     top: 20px;
@@ -537,8 +566,8 @@ td {
 }
 
 #links {
-    position: absolute;
-    width: 380px;
+    float: left;
+    width: 25%;
     top: 20px;
     left: 570px;
 }
@@ -550,13 +579,10 @@ td {
     text-align: left;
 }
 
-
-
 #map {
-    position: absolute;
-    width: 380px;
-    top: 20px;
-    right: 80px;
+    float: left;
+    width: 25%;
+	margin: auto;
 }
 
 footer a:link {
@@ -568,8 +594,9 @@ footer a:hover {
 }
 
 
-
-/****** SCREEN RELATIVITY ******/
+/**************************************************/
+/*************** SCREEN RELATIVITY ***************/
+/**************************************************/
 @media screen and (max-width: 1040px) {
 
     #logo_element,
