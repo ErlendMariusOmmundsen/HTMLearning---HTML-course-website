@@ -59,7 +59,7 @@ body{
 #about_div{
   margin: auto;
   margin-top: 140px;
-  width: 700px;
+  width: 80%;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -69,7 +69,7 @@ body{
 
 #stuffs{
   display: block;
-  width: 820px;
+  width: 100%;
   margin: auto;
   margin-top: 100px;
 }
@@ -108,7 +108,7 @@ body{
 #all_lecturers{
   position: relative;
   display: block;
-  width: 1000px;
+  width: 100%;
   height: 600px;
   margin: auto;
   margin-top: 500px;
