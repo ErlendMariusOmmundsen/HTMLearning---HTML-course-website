@@ -374,9 +374,9 @@ p {
     padding: 10px;
     margin: 20px;
     width: 45%;
-    position: relative;
     transition: all 0.1s ease-out;
     transition: all 0.1s ease-in;
+    position: relative;
 }
 
 .courses_box:hover {
@@ -607,15 +607,25 @@ footer a:hover {
     #links {
         left: 0;
     }
-
+/**************** COURSES OVERVIEW ****************/
     .courses_box {
         float: none;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
-        width: 80%;
+        padding: 5px;
+        width: 100%;
     }
     
+    .courses_box img{
+        width: 25%;
+    }
+    
+    .price, .upcoming{
+        display: none;
+    }
+    
+/****************** COURSE STYLE ******************/
     #info_box{
         display: block;
     }
