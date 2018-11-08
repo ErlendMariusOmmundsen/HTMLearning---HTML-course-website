@@ -14,30 +14,27 @@
     <small>by Martin Skurtveit, Joakim Fremstad, Erlend Marius Ommundsen, Lærke Svendsen
         <br>Written 05.11.2018</small>
     <h2>Changes - Update structure! </h2>
+    During the development of the website we found that the following directory
+    structure with files fit much better.  Who were responsible for each file
+    is indicated inside the parentheses after the file name. The footer and
+    navbar is stored inside includeHTML, the responsibility of these were
+    Martin and Erlend respectively.
     <pre>
 .
-├── about.html
+├── about.html (Erlend)
 ├── courses
-│   └── html_working_man.html
-├── courses_overview.html
+│   └── html_working_man.html (Lærke)
+├── courses_overview.html (Lærke)
 ├── css
-│   ├── about_us_style.css
-│   ├── course.css
-│   ├── courses_overview.css
-│   ├── documentstyle.css
-│   ├── footer.css
-│   ├── frontpage_style.css
-│   ├── help.css
-│   ├── login.css
-│   ├── main.css
-│   ├── navbar.css
-│   └── quiz.css
+│   ├── documentstyle.css (Entire group)
+│   ├── frontpage_style.css (Erlend)
+│   ├── main.css (Entire group)
 ├── Documents
-│   ├── P1_requirements_1.html
-│   ├── P2_design_1.html
-│   └── P3_changes.html
-├── footer.html
-├── help.html
+│   ├── P1_requirements_1.html (Entire group)
+│   ├── P2_design_1.html (Entire group)
+│   ├── P3_changes_1.html (Entire group)
+│   └── P4_testing_1.html (Entire group)
+├── help.html (Joakim)
 ├── img
 │   ├── course.jpg
 │   ├── css.png
@@ -54,6 +51,7 @@
 │   │   └── default_lecturer.png
 │   ├── lecturers.jpeg
 │   ├── logo.png
+│   ├── Mailicon.png
 │   ├── Mockups
 │   │   ├── About_us.png
 │   │   ├── Course.png
@@ -67,31 +65,52 @@
 │   │   ├── SiteMap.png
 │   │   └── Template.png
 │   ├── onestar.png
+│   ├── phoneicon.png
 │   ├── pil.png
+│   ├── positionicon.png
 │   ├── work_big.jpg
 │   ├── work_smaller1.jpg
 │   └── work_smaller2.jpg
 ├── index.html
 ├── js
 │   ├── courses.js
-│   ├── help.js
-│   ├── includeHTML.js
+│   ├── help.js (Joakim)
+│   ├── includeHTML.js (Joakim)
 │   ├── lecturer.js
-│   ├── login.js
+│   ├── login.js (Joakim)
+│   ├── maps.js (Martin)
 │   ├── quizdatabase.json
-│   ├── quiz.js
-│   └── registration.js
-├── login.html
-├── quiz.html
-├── structure.txt
-└── test_procedure.html
+│   ├── quiz.js (Lærke)
+│   └── registration.js (Joakim)
+├── lecturers.html (Martin)
+├── login.html (Joakim)
+└── quiz.html (Lærke)
     </pre>
 
+    <h2>help.html</h2>
+    In the FAQ when hovering over a question it changes its style to that of a
+    link to indicate that it is clickable. Also instead of sliding down the
+    answer it is now shown immediately.
+
+    <h2>login.html</h2>
+    The sizes are changed somewhat to make the page more responsive. The white
+    box is changed to 510 x 370, which changes a bit depending on screen size
+    and zoom. The tabs are now sized by 255 x 64. The sign in and sign up
+    button is now 293 x 37 which changes based on screen size and zoom.
+
     <h2>Fulfilment</h2>
+    TODO: Skriv inn mer detaljert hva dere har gjort.
+
+    Everyone worked with HTML, CSS and Javascript.
     <h3>Erlend</h3>
+    Worked on the frontpage (index.html) including the navigation bar and the about (about.html) page.
     <h3>Lærke</h3>
+    Worked on the overview of the courses, course description, and the quiz.
     <h3>Joakim</h3>
+    Worked on the login and registration using HTML form validation and Javascript to verify that passwords are equal.
+    In the FAQ he implemented javascript to toggle the visibility of answers to questions.
+    In includeHTML he implemented a way to modularize the footer and navbar HTML code, so that this will be consistent across all sites.
     <h3>Martin</h3>
-    <h2>Work division</h2>
+    Worked on the footer, Google maps integration and the lecturer descriptions.
   </body>
 </html>
