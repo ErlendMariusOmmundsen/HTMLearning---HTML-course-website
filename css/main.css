@@ -608,4 +608,16 @@ footer a:hover {
         margin-bottom: 20px;
         width: 80%;
     }
+    
+    #info_box{
+        display: block;
+    }
+    
+    #info_box img{
+        display: none;
+    }
+    
+    #info_box > div{
+        width: 100%;
+    }
 }

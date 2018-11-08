@@ -8,5 +8,6 @@
             all_reviews.style.display = 'none';
         } else {
             all_reviews.style.display = 'block';
+            location.href='#all_reviews_box';
         }
     });
