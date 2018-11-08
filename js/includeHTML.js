@@ -30,6 +30,7 @@ function setFooter() {
 			conballis velit, eu auctor lacus vehicula sit amet.
 		</p>
 	</div>
+	<p style="position:absolute; bottom:1px;color:grey;font-size:10px;">Created by IT2805 Webteknologi group 1 </p>
 	<div id="links">
 		<div class="grid-container">
 		<div class="item1"><img class="icon" src="` + folder_up + `img/Mailicon.png" alt="E-mail:"/></div>
@@ -46,7 +47,6 @@ function setFooter() {
 	</div>
 <script src="js/maps.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
-<p style="color:grey;font-size: 10px;">Created by IT2805 Webteknologi group 1 </p>
 `;
     footer.innerHTML = footer_html;
 };
