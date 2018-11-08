@@ -22,7 +22,8 @@ function setFooter() {
     if (typeof inside_folder !== 'undefined') {
         folder_up = '../';
     };
-    let footer_html = `
+    let footer_html = 
+	`<div id="footercontainer">
 	<div id="info">
 		<h1 style="color:#def2f1;font-family:muli,serif;"> About the company </h1>
 		<p style="color:grey;">
@@ -45,11 +46,21 @@ function setFooter() {
 	<div id="map">
 		<div id="googlemaps" style="width:320px;height:200px;" >Map to location</div>
 	</div>
+	</div>
 <script src="js/maps.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB7pwvKLN2edHaPFjixmfxDwBHb3rfzeI&amp;callback=myMap"></script>
 `;
     footer.innerHTML = footer_html;
 };
+
+function setHamburger(){
+	burger = document.getElementById("placeholder-hamburger");
+	burger.id = "hamburger";
+	let burger_html = `Insert HTML for burger here
+	`
+	burger.innerHTML = burger_html;
+	
+}
 
 function setAll() {
     setNavbar();
