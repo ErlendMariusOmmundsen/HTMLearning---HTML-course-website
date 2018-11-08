@@ -30,8 +30,7 @@ img {
     vertical-align: middle;
 }
 
-/****** LECTURERS STYLE ******/
-/* Position the image container (needed to position the left and right arrows) */
+
 .container {
     position: relative;
     margin: auto;
@@ -40,8 +39,9 @@ img {
     min-height: 100%;
 }
 
+/****** LECTURERS STYLE ******/
 /* Hide the images by default */
-.mySlides {
+.lecturerSlides {
     display: none;
     background-color: var(--dark);
     min-height: 400px;
@@ -86,7 +86,7 @@ img {
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Highlights buttons when hovering*/
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
