@@ -436,10 +436,12 @@ td {
 
 #about_box {
     float: left;
+    width: 60%;
 }
 
 #info_bar {
     float: right;
+    width: 40%;
 }
 
 #info_box::after {
