@@ -23,7 +23,7 @@ body{
 
 
 
-button {
+#nav_bar button {
     font-family: Muli;
     display: inline-block;
     background: transparent;
@@ -44,7 +44,7 @@ button {
     border: 1px solid #17252A;
 }
 
-button:hover {
+#nav_bar button:hover {
     border: 1px solid rgba(223, 190, 106, 0);
     color: #FEFFFF;
     background-position: 99% 50%;
@@ -73,9 +73,6 @@ button:hover {
     margin-top: 35vh;
 }
 
-#logo_element {
-    width: 25%;
-}
 
 #learn_element {
     display: block;
@@ -89,13 +86,13 @@ button:hover {
     padding-right: 25px;
     border-radius: 10px;
     color: #FEFFFF;
-    font-size: 20px;
+    font-size: 21px;
     transition: all ease-out 0.25s;
 }
 
 #learn_element:hover {
     background-color: #17252A;
-    font-size: 21px;
+    font-size: 22px;
     padding: 12px;
     padding-left: 27px;
     padding-right: 27px;
@@ -125,7 +122,6 @@ button:hover {
 .content {
     background-color: #3a5d69;
     width: 55%;
-    height: 35%;
     padding: 40px;
     margin-left: 15%;
     margin-top: 150px;
@@ -163,7 +159,8 @@ h2 {
 }
 
 #first_content{
-  margin-top: 100px;
+  margin-top: 80px;
+  padding-bottom: 130px;
 }
 
 #second_content{
@@ -172,7 +169,8 @@ h2 {
 }
 
 #third_content {
-    margin-top: 660px;
+    margin-top: 760px;
+    padding-bottom: 130px;
 }
 
 .content_input{
@@ -194,6 +192,10 @@ h2 {
 }
 
 ::-webkit-scrollbar {
+    display: none;
+}
+
+#menuToggle{
     display: none;
 }
 
@@ -276,3 +278,178 @@ a:hover{
     #logo_element {
         display: none;
     }
+}
+
+@media screen and (max-width: 600px) {
+    #nav_bar{
+      display: none;
+    }
+
+    #first_content{
+      margin-top: 750px;
+    }
+
+    #arrow_img{
+      display: none;
+    }
+
+    a{
+      text-decoration: none;
+      color: #cdcdcd;
+      transition: color 0.3s ease;
+    }
+
+    a:hover{
+      color: #3a5d69;
+    }
+
+    #menuToggle{
+      display: block;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+      background-color: black;
+      z-index: 1;
+
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    #burger_container{
+      background-color: transparent;
+      margin-top: 23px;
+      margin-left: 19px;
+    }
+
+    #menuToggle input{
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: 15px;
+      left: 12px;
+
+      cursor: pointer;
+
+      opacity: 0;
+      z-index: 2;
+
+      -webkit-touch-callout: none;
+    }
+
+
+    #menuToggle span{
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+
+      background: #cdcdcd;
+
+      z-index: 1;
+
+      transform-origin: 4px 0px;
+
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+
+    #span1{
+      margin-top: 23px;
+      transform-origin: 0% 0%;
+    }
+
+    #span2{
+      transform-origin: 0% 100%;
+    }
+
+    #span1, #span2, #span3{
+      margin-left: 18px;
+    }
+
+    #menuToggle input:checked ~ span{
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -2px);
+      background: #cdcdcd;
+    }
+
+    #menuToggle input:checked ~ #span2{
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ #span3{
+      transform: rotate(-45deg) translate(0, -4px);
+    }
+
+    #menu{
+      position: fixed;
+      width: 175px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      padding-left: 100px;
+
+      background: #17252A;
+      list-style-type: none;
+
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li{
+      padding: 10px 0;
+      font-size: 22px;
+    }
+
+    #menuToggle input:checked ~ ul{
+      transform: none;
+    }
+
+@media screen and (max-width: 480px) {
+    #logo_img{
+      width: 100%;
+    }
+
+    #learn_element{
+      font-size: 16px;
+      padding: 2%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    #happy_element, #happy_element2, #happy_element3{
+      display: none;
+    }
+
+    .content{
+      padding: 30px;
+      margin: auto;
+      width: 69%;
+    }
+    #first_content,
+    #second_content,
+    #third_content {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    #second_content{
+      float: none;
+      margin: auto;
+    }
+
+    #third_content{
+      margin-top: 50px;
+    }
+
+
+
+}
