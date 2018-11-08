@@ -291,10 +291,8 @@ input.long {
 }
 
 input::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
     opacity: 1;
-    /* Firefox */
 }
 
 .topbutton > p {
@@ -343,6 +341,12 @@ input::placeholder {
 /* Initially hidden */
 #signupbox {
     display: none;
+}
+
+#bound {
+  height: 800px;
+  position: relative;
+  padding: 30px;
 }
 
 
