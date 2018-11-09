@@ -34,13 +34,15 @@ function setFooter() {
 	<p style="position:absolute; bottom:1px;color:grey;font-size:10px;">Created by IT2805 Webteknologi group 1 </p>
 	<div id="links">
 		<div class="grid-container">
-		<div class="item1"><img class="icon" src="` + folder_up + `img/Mailicon.png" alt="E-mail:"/></div>
-		<div class="item2"><a href="mailto:help@htmlearning.com?Subject=HTMLearning" target="_top">help@htmlearning.com</a></div>
-		<div class="item3"><img class="icon" src="` + folder_up + `img/phoneicon.png" alt="Phone:"/></div>
-		<div class="item4"><a href="tel:+4700000000">+47 000 00 000 </a></div>
-		<div class="item5"><img class="icon" src="` + folder_up + `img/positionicon.png" alt="Pos:"/></div>
-		<div class="item6"><a href="https://www.google.com/maps/place/Sondre+gate+4,+7011+Trondheim">
-			Søndre gate 4, Trondheim</a></div>
+		<div class="item1"><img class="icon" src="` + folder_up + `img/Mailicon.png" alt="E-mail:"/>
+		<a href="mailto:help@htmlearning.com?Subject=HTMLearning" target="_top">help@htmlearning.com</a></div>
+		<div class="item2"><img class="icon" src="` + folder_up + `img/phoneicon.png" alt="Phone:"/>
+		<a href="tel:+4700000000">+47 000 00 000 </a></div>
+		<div class="item3">
+		<img class="icon" src="` + folder_up + `img/positionicon.png" alt="Pos:"/>
+		<a href="https://www.google.com/maps/place/Sondre+gate+4,+7011+Trondheim">
+			Søndre gate 4, Trondheim</a>
+			</div>
 		</div>
 	</div>
 	<div id="map">

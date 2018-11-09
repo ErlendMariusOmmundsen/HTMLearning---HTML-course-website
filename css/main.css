@@ -98,10 +98,6 @@ input::placeholder {
 }
 
 
-/**************************************************/
-/**************** LECTURERS STYLE ****************/
-/*************************************************/
-/* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
     margin: auto;
@@ -110,7 +106,9 @@ input::placeholder {
     min-height: 100%;
 }
 
-/****** LECTURERS STYLE ******/
+/**************************************************/
+/**************** LECTURERS STYLE ****************/
+/*************************************************/
 /* Hide the images by default */
 .lecturerSlides {
     display: none;
@@ -544,34 +542,27 @@ td {
 }
 
 .icon {
-    position: absolute;
+    position: relative;
     width: 35px;
     margin: auto;
 }
 
-.grid-container {
-    display: grid;
-    grid: 20px / auto auto;
-    grid-gap: 15px;
-    padding: 10px;
-}
 
 #links {
     float: left;
     width: 33%;
-    margin-top: 20px;
+	padding: 10px;
+    margin-top: 10px;
 }
 
-.item2,
-.item4,
-.item6 {
-    margin-top: 8px;
-    text-align: left;
+.item1, .item2, .item3{
+	margin: 10px;
 }
 
 #map {
     float: left;
     width: 33%;
+	
 	margin-top: 20px;
 }
 
@@ -595,11 +586,17 @@ footer a:hover {
     #info {
         display: none;
     }
-
+	/**LECTURER**/
     .lecturerinfo {
-        width: 100%;
+        width: 90%;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
         float: none;
     }
+	.lecturerinfo p{
+		text-align: left;
+	}
 	
 	.lecturerimg{
 		width: 100%;
@@ -608,8 +605,10 @@ footer a:hover {
 	
 	.lecturerSlides{
 		overflow: auto;
+		margin-bottom: 40px;
+		margin-top: -40px;
 	}
-	
+	/**FOOTER**/
 	#content-wrap{
 		padding-bottom: 120px;
 	}
@@ -628,8 +627,10 @@ footer a:hover {
 
     #links {
 		margin: auto;
-		width: 100%;
+		width: 80%;
 		font-size: 12px;
+		float: none;
+		min-width: 300px;
     }
 
     .courses_box {

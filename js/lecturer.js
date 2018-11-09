@@ -1,3 +1,5 @@
+/**** Used code from w3schools/howto/howto_js_slideshow_gallery.asp ****/
+
 var slideIndex;
 
 function plusSlides(n) {
@@ -28,11 +30,12 @@ function showSlides(n) {
 
 function parseURL(){
 	if(window.location.hash){
-		var hash = window.location.hash.substring(1);
-		showSlides(slideIndex = hash);
+		slideIndex = window.location.hash.substring(1);
+		showSlides(slideIndex);
 	}
 	else{
-		showSlides(slideIndex = 1);
+		slideIndex = 1;
+		showSlides(slideIndex);
 }
 }
   
