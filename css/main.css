@@ -80,7 +80,6 @@ input::placeholder {
 #nav_bar {
     position: fixed;
     top: 0px;
-    margin-left: -8px;
     height: 100px;
     width: 100%;
     background-color: #3aafa9;
@@ -99,10 +98,6 @@ input::placeholder {
 }
 
 
-/**************************************************/
-/**************** LECTURERS STYLE ****************/
-/*************************************************/
-/* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
     margin: auto;
@@ -111,7 +106,9 @@ input::placeholder {
     min-height: 100%;
 }
 
-/****** LECTURERS STYLE ******/
+/**************************************************/
+/**************** LECTURERS STYLE ****************/
+/*************************************************/
 /* Hide the images by default */
 .lecturerSlides {
     display: none;
@@ -531,47 +528,42 @@ td {
     background: #17252a;
 }
 
+#footercontainer{
+	overflow: hidden;
+	width: 80%;
+	margin: auto;
+}
+
 #info {
     float: left;
-    width: 25%;
-    margin-left: 80px;
+    width: 33%;
     min-height: 200px;
-    top: 20px;
     text-align: center;
 }
 
 .icon {
-    position: absolute;
+    position: relative;
     width: 35px;
-    height: 35px;
     margin: auto;
 }
 
-.grid-container {
-    display: grid;
-    grid: 20px / auto auto;
-    grid-gap: 15px;
-    padding: 10px;
-}
 
 #links {
     float: left;
-    width: 25%;
-    top: 20px;
-    left: 570px;
+    width: 33%;
+	padding: 10px;
+    margin-top: 10px;
 }
 
-.item2,
-.item4,
-.item6 {
-    margin-top: 8px;
-    text-align: left;
+.item1, .item2, .item3{
+	margin: 10px;
 }
 
 #map {
     float: left;
-    width: 25%;
-    margin: auto;
+    width: 33%;
+	
+	margin-top: 20px;
 }
 
 footer a:link {
@@ -588,21 +580,57 @@ footer a:hover {
 /**************************************************/
 @media screen and (max-width: 1040px) {
 
-    #logo_element,
+    .caption-container, #nav_bar, #logo_element,
     #map,
     .row,
-    .lecturerimg,
     #info {
         display: none;
     }
-
+	/**LECTURER**/
     .lecturerinfo {
-        width: 100%;
+        width: 90%;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
         float: none;
     }
+	.lecturerinfo p{
+		text-align: left;
+	}
+	
+	.lecturerimg{
+		width: 100%;
+		height: 100%;
+	}
+	
+	.lecturerSlides{
+		overflow: auto;
+		margin-bottom: 40px;
+		margin-top: -40px;
+	}
+	/**FOOTER**/
+	#content-wrap{
+		padding-bottom: 120px;
+	}
+	
+	#footer{
+		height: 140px;
+	}
+	
+	.icon{
+		width: 25px;
+	}
+	
+	.grid-container{
+		margin: 0;
+	}
 
     #links {
-        left: 0;
+		margin: auto;
+		width: 80%;
+		font-size: 12px;
+		float: none;
+		min-width: 300px;
     }
 
     .courses_box {
