@@ -23,28 +23,23 @@ img {
 
 button {
     font-family: Muli;
+    background-color: #3aafa9;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px 10px;
     display: inline-block;
-    background: transparent;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 0.7rem;
     letter-spacing: 0.3em;
     color: #17252a;
-    border-radius: 2px;
-    padding: 0.5% 2% 0.5%;
     transition: all 0.2s ease-out;
     transition: all 0.15s ease-in;
-    background: linear-gradient(270deg, #3a5d69, #17252a, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
-    background-position: 1% 50%;
-    background-size: 300% 300%;
-    border: 1px solid #17252a;
     margin: 20px;
 }
 
-button:hover {
-    border: 1px solid rgba(223, 190, 106, 0);
-    color: #feffff;
-    background-position: 99% 50%;
+button:hover{
+  color: #FEFFFF;
 }
 
 input {
@@ -87,8 +82,20 @@ input::placeholder {
 }
 
 #nav_bar button {
-    margin-left: 20px;
-    margin-top: 35px;
+    background: transparent;
+    border-radius: 2px;
+    border: 1px solid #17252a;
+    padding: 0.5% 2% 0.5%;
+    background: linear-gradient(270deg, #3a5d69, #17252a, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    margin: 35px 0px 0px 20px;
+}
+
+#nav_bar button:hover {
+    border: 1px solid rgba(223, 190, 106, 0);
+    color: #feffff;
+    background-position: 99% 50%;
 }
 
 #logo_element {
@@ -364,9 +371,9 @@ p {
     padding: 10px;
     margin: 20px;
     width: 45%;
-    position: relative;
     transition: all 0.1s ease-out;
     transition: all 0.1s ease-in;
+    position: relative;
 }
 
 .courses_box:hover {
@@ -400,18 +407,9 @@ p {
     color: #feffff;
     font-weight: bold;
     font-size: 26pt;
-    position: relative;
-}
-
-.heading_box > span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.heading_box > img {
-    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 table {
@@ -431,19 +429,24 @@ td {
 }
 
 #about_box {
-    float: left;
     width: 60%;
 }
 
 #info_bar {
-    float: right;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#info_box::after {
-    content: "";
-    clear: both;
-    display: table;
+#info_bar img{
+    width: 250px;
+    margin-top: 20px;
+}
+
+#info_box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .review_box {
@@ -632,12 +635,34 @@ footer a:hover {
 		float: none;
 		min-width: 300px;
     }
-
+/**************** COURSES OVERVIEW ****************/
     .courses_box {
         float: none;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
-        width: 80%;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    .courses_box img{
+        width: 25%;
+    }
+    
+    .price, .upcoming{
+        display: none;
+    }
+    
+/****************** COURSE STYLE ******************/
+    #info_box{
+        display: block;
+    }
+    
+    #info_box img{
+        display: none;
+    }
+    
+    #info_box > div{
+        width: 100%;
     }
 }

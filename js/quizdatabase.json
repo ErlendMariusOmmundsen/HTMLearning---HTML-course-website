@@ -8,6 +8,15 @@
     },
     "correct_answer": "c"
 }, {
+    "question": "How would you make a cell reach over 3 columns?",
+    "answers": {
+        "a": "&lttd 3 &gt",
+        "b": "&lttd span='3'&gt",
+        "c": "&lttd colmerge='3' &gt",
+        "d": "&lttd colspan='3'&gt"
+    },
+    "correct_answer": "d"
+}, {
     "question": "How would you submit a form?",
     "answers": {
         "a": "With input type submit",
@@ -16,4 +25,13 @@
         "d": "With a buttom with name submit"
     },
     "correct_answer": "a"
+}, {
+    "question": "Why should you use lables with a for attribute with your inputs?",
+    "answers": {
+        "a": "It allows assistive technologies to read your page",
+        "b": "Users can click the label to activate the input",
+        "c": "It gives a universal id to the input",
+        "d": "Both a and b are right"
+    },
+    "correct_answer": "d"
 }]

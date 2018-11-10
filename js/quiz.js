@@ -122,6 +122,9 @@ function buildQuiz(questions_list) {
     function drawCircle(x, radius, index) {
         context.beginPath();
         context.arc(x, centerY, radius, 0, 2 * Math.PI, false);
+        if(index === question_counter){
+            context.strokeStyle = 'LightSeaGreen';
+        }
         if (user_selections[index] === undefined) {
             context.fillStyle = 'lightgrey';
         } else if (questions_list[index].correct_answer === user_selections[index]) {
@@ -131,6 +134,7 @@ function buildQuiz(questions_list) {
         }
         context.fill();
         context.stroke();
+        context.strokeStyle = 'black';
     }
 
     function drawProgress() {
