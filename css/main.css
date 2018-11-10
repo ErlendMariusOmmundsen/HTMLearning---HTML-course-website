@@ -439,6 +439,14 @@ td {
     align-items: center;
 }
 
+#info_bar a:link{
+    color: #17252a;
+}
+
+#info_bar a:hover{
+    color: #2b7a78;
+}
+
 #info_bar img{
     width: 250px;
     margin-top: 20px;
