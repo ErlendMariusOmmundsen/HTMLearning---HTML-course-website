@@ -11,10 +11,10 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("lecturerSlides");
-  var dots = document.getElementsByClassName("lecturerRef");
-  var captionText = document.getElementById("caption");
+  let i;
+  let slides = document.getElementsByClassName("lecturerSlides");
+  let dots = document.getElementsByClassName("lecturerRef");
+  let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -31,6 +31,7 @@ function showSlides(n) {
 function parseURL(){
 	if(window.location.hash){
 		slideIndex = window.location.hash.substring(1);
+        slideIndex = parseInt(slideIndex);
 		showSlides(slideIndex);
 	}
 	else{
