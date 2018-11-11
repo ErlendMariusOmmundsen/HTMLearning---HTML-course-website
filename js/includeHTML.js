@@ -79,15 +79,6 @@ function setFooter() {
     footer.innerHTML = footer_html;
 };
 
-function setHamburger(){
-	burger = document.getElementById("placeholder-hamburger");
-	burger.id = "hamburger";
-	let burger_html = `Insert HTML for burger here
-	`
-	burger.innerHTML = burger_html;
-	
-}
-
 function setAll() {
     setNavbar();
     setHamburger();
