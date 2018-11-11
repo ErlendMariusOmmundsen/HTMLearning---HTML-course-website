@@ -607,7 +607,7 @@ footer a:hover {
     #picture_div {
         display: none;
     }
-	/**LECTURER**/
+/**************** LECTURERS ****************/
     .lecturerinfo {
         width: 90%;
 		margin: auto;
@@ -629,7 +629,7 @@ footer a:hover {
 		margin-bottom: 40px;
 		margin-top: -40px;
 	}
-	/**FOOTER**/
+/****************** FOOTER ******************/
 	#content-wrap{
 		padding-bottom: 120px;
 	}
@@ -645,8 +645,7 @@ footer a:hover {
 	.grid-container{
 		margin: 0;
 	}
-
-	/**ABOUT US**/
+/***************** ABOUT US *****************/
 	.lecturer{
         	width: 35%;
 	}
@@ -691,9 +690,8 @@ footer a:hover {
     
     .price, .upcoming{
         display: none;
-    }
-    
-/****************** COURSE STYLE ******************/
+    } 
+/****************** COURSE ******************/
     #info_box{
         display: block;
     }
