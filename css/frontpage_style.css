@@ -4,10 +4,11 @@ html{
   margin: 0;
 }
 body{
-  height: 1800px;
+  height: auto;
   background: #DEF2F1;
   padding: 0;
   margin: 0;
+  font-family: Roboto;
 }
 
 /*NAVIGASJONSBAR*/
@@ -21,8 +22,6 @@ body{
   top: 0;
 }
 
-
-
 #nav_bar button {
     font-family: Muli;
     display: inline-block;
@@ -33,7 +32,7 @@ body{
     letter-spacing: 0.3em;
     color: #17252A;
     border-radius: 2px;
-    padding: 0.5% 2% 0.5%;
+    padding: 0.5% 1.2% 0.5%;
     transition: all 0.2s ease-out;
     transition: all 0.15s ease-in;
     background: linear-gradient(270deg, #3a5d69, #17252A, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
@@ -134,7 +133,7 @@ body{
     float: right;
     margin-right: -35%;
     padding: 20px;
-    width: 55%;
+    width: 40%;
 }
 
 #happy_element2{
@@ -143,7 +142,7 @@ body{
   margin-left: -35%;
   padding: 40px;
   margin-top: -20px;
-  width: 55%;
+  width: 40%;
 }
 
 h2 {
@@ -169,7 +168,7 @@ h2 {
 }
 
 #third_content {
-    margin-top: 760px;
+    margin-top: 700px;
     padding-bottom: 130px;
 }
 
@@ -204,7 +203,7 @@ h2 {
 #container {
 	position: relative;
 	min-height: 100vh;
-}	
+}
 
 #content-wrap{
 	padding-bottom: 240px;
@@ -274,9 +273,18 @@ a:hover{
 
 
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 940px) {
     #logo_element {
         display: none;
+    }
+
+    #happy_element,
+    #happy_element3 {
+        width: 55%;
+    }
+
+    #happy_element2{
+      width: 55%;
     }
 }
 
@@ -286,7 +294,7 @@ a:hover{
     }
 
     #first_content{
-      margin-top: 750px;
+      margin-top: 105vh;
     }
 
     #arrow_img{
@@ -313,15 +321,8 @@ a:hover{
       width: 70px;
       background-color: black;
       z-index: 1;
-
       -webkit-user-select: none;
       user-select: none;
-    }
-
-    #burger_container{
-      background-color: transparent;
-      margin-top: 23px;
-      margin-left: 19px;
     }
 
     #menuToggle input{
@@ -331,12 +332,9 @@ a:hover{
       position: absolute;
       top: 15px;
       left: 12px;
-
       cursor: pointer;
-
       opacity: 0;
       z-index: 2;
-
       -webkit-touch-callout: none;
     }
 
@@ -347,13 +345,9 @@ a:hover{
       height: 4px;
       margin-bottom: 5px;
       position: relative;
-
       background: #cdcdcd;
-
       z-index: 1;
-
       transform-origin: 4px 0px;
-
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                   opacity 0.55s ease;
@@ -394,13 +388,10 @@ a:hover{
       padding: 50px;
       padding-top: 125px;
       padding-left: 100px;
-
       background: #17252A;
       list-style-type: none;
-
       transform-origin: 0% 0%;
       transform: translate(-100%, 0);
-
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
 
@@ -449,7 +440,4 @@ a:hover{
     #third_content{
       margin-top: 50px;
     }
-
-
-
 }

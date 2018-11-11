@@ -15,6 +15,30 @@ function setNavbar() {
     navbar.innerHTML = navbar_html;
 };
 
+function setHamburger(){
+    hamburger = document.getElementById("placeholder-hamburger");
+    hamburger.id = "menuToggle";
+    let folder_up = '';
+    if (typeof inside_folder !== 'undefined') {
+        folder_up = '../';
+    };
+    let hamburger_html = `
+        <input type="checkbox" />
+
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+
+        <ul id="menu">
+          <a href="` + folder_up + `index.html"><li>Home</li></a>
+          <a href="` + folder_up + `courses_overview.html"><li>Courses</li></a>
+          <a href="` + folder_up + `help.html"><li>FAQ/Help</li></a>
+          <a href="` + folder_up + `about.html"><li>About us</li></a>
+          <a href="` + folder_up + `login.html"><li>Login</li></a>
+        </ul>`;
+    hamburger.innerHTML = hamburger_html;
+}
+
 function setFooter() {
     footer = document.getElementById("placeholder-footer");
     footer.id = "footer"
@@ -55,16 +79,8 @@ function setFooter() {
     footer.innerHTML = footer_html;
 };
 
-function setHamburger(){
-	burger = document.getElementById("placeholder-hamburger");
-	burger.id = "hamburger";
-	let burger_html = `Insert HTML for burger here
-	`
-	burger.innerHTML = burger_html;
-	
-}
-
 function setAll() {
     setNavbar();
+    setHamburger();
     setFooter();
 }
