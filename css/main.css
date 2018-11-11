@@ -730,13 +730,13 @@ footer a:hover {
 /**************** HAMBURGER STYLE *****************/
 /**************************************************/
   /*Very much inspired by https://codepen.io/erikterwan/pen/EVzeRP*/
-    a{
+    #menu a{
       text-decoration: none;
       color: #cdcdcd;
       transition: color 0.3s ease;
     }
 
-    a:hover{
+    #menu a:hover{
       color: #3a5d69;
     }
 
