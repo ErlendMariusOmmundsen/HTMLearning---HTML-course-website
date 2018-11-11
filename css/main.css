@@ -605,7 +605,7 @@ footer a:hover {
 /**************************************************/
 @media screen and (max-width: 940px) {
 
-    .caption-container, #nav_bar, #logo_element,
+    .caption-container, #logo_element,
     #map,
     .row,
     #info, 
