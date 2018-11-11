@@ -754,9 +754,6 @@ footer a:hover {
         display: none;
     }
 /**************** FRONTPAGE ****************/
-	#welcome_element{
-		display: none;
-	}
 	.content{
 		width: 100%;
 		float: none;
@@ -888,6 +885,16 @@ footer a:hover {
     #nav_bar{
       display: none;
     }
+
+/************** FRONTPAGE **************/
+    #first_content{
+      margin-top: 105vh;
+    }
+
+    #logo_img{
+      width: 100%;
+    }
+	
 /**************** LOGIN ****************/
     .whitebox > p {
         margin-left: 1em;
