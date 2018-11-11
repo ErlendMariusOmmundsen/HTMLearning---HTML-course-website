@@ -1,14 +1,17 @@
 html{
   scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
+
+}
+
+* {
+    font-family: Roboto;
+    box-sizing: border-box;
 }
 body{
   height: auto;
   background: #DEF2F1;
   padding: 0;
   margin: 0;
-  font-family: Roboto;
 }
 
 /*NAVIGASJONSBAR*/
@@ -58,10 +61,10 @@ body{
 /*FRONTPAGE*/
 /*WELCOME*/
 #welcome_element {
-    position: absolute;
+    position: relative;
     background-color: #3AAFA9;
     width: 100%;
-    height: 100%;
+	min-height: 100%;
     top: 0;
     left: 0;
 }
@@ -145,7 +148,7 @@ body{
   width: 40%;
 }
 
-h2 {
+h1, h2, h3 {
     font-family: Muli;
 }
 
@@ -199,75 +202,75 @@ h2 {
 }
 
 /*FOOTER*/
-
+.container {
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+    min-height: 100%;
+}
 #container {
-	position: relative;
-	min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
 }
 
-#content-wrap{
-	padding-bottom: 240px;
+#content-wrap {
+    padding-bottom: 240px;
 }
-footer{
-	padding: 0;
-	margin: 0;
-}
+
 #footer {
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	height: 240px;
-	background: #17252A;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    height: 240px;
+    margin: auto;
+    background: #17252a;
 }
 
-#info{
-	position: absolute;
-	width: 380px;
-	margin-left: 80px;
-	min-height: 200px;
-	top: 20px;
-	text-align: center;
-}
-.icon{
-	position: absolute;
-	width: 35px;
-	height: 35px;
+#footercontainer{
+	overflow: hidden;
+	width: 80%;
 	margin: auto;
 }
-.grid-container {
-	display: grid;
-	grid: 20px / auto auto;
-	grid-gap: 15px;
-	padding: 10px;
+
+#info {
+    float: left;
+    width: 33%;
+    min-height: 200px;
+    text-align: center;
 }
+
+.icon {
+    position: relative;
+    width: 35px;
+    margin: auto;
+}
+
 
 #links {
-	position: absolute;
-	width: 380px;
-	top: 20px;
-	left: 570px;
+    float: left;
+    width: 33%;
+	padding: 10px;
+    margin-top: 10px;
 }
 
-.item2, .item4, .item6{
-	margin-top: 8px;
-	text-align: left;
+.item1, .item2, .item3{
+	margin: 10px;
 }
 
-
-
-#map{
-	position: absolute;
-	width: 380px;
-	top: 20px;
-	right: 80px;
+#map {
+    float: left;
+    width: 33%;
+	margin-top: 20px;
 }
 
-a:link{
-	color:#2b7a78;
+footer a:link {
+    color: #2b7a78;
 }
 
-a:hover{
-	color:#3aafa9;
+footer a:hover {
+    color: #3aafa9;
 }
 
 
@@ -286,6 +289,24 @@ a:hover{
     #happy_element2{
       width: 55%;
     }
+	/****************** FOOTER ******************/
+	#map,
+    #info {
+        display: none;
+    }
+	#content-wrap{
+		padding-bottom: 120px;
+	}
+	
+	#footer{
+		height: 140px;
+	}
+	
+	.icon{
+		width: 25px;
+	}
+	
+
 }
 
 @media screen and (max-width: 600px) {
@@ -403,6 +424,8 @@ a:hover{
     #menuToggle input:checked ~ ul{
       transform: none;
     }
+
+}
 
 @media screen and (max-width: 480px) {
     #logo_img{

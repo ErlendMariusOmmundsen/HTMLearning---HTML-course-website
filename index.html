@@ -3,10 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Frontpage</title>
-    <link rel="stylesheet" href="css/frontpage_style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="js/includeHTML.js"></script>
+	<style>
+	#nav_bar{
+	  position: sticky;
+	  height: 100px;
+	  background-color: #3AAFA9;
+	  margin-top: 100vh;
+	  z-index: 998;
+	  width: 100%;
+	  top: 0;
+	}
+
+	#nav_bar button {
+		font-family: Muli;
+		display: inline-block;
+		background: transparent;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 0.7rem;
+		letter-spacing: 0.3em;
+		color: #17252A;
+		border-radius: 2px;
+		padding: 0.5% 1.2% 0.5%;
+		transition: all 0.2s ease-out;
+		transition: all 0.15s ease-in;
+		background: linear-gradient(270deg, #3a5d69, #17252A, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+		background-position: 1% 50%;
+		background-size: 300% 300%;
+		margin-left: 20px;
+		margin-top: 35px;
+		border: 1px solid #17252A;
+	}
+	#logo_element {
+		width: 340px;
+		float: left;
+	}
+</style>
   </head>
   <body>
     <div id="welcome_element">
@@ -16,9 +52,11 @@
       <a href="#nav_bar"><img id="arrow_img" src="img/pil.png" alt="Arrow"></a>
     </div>
 	<div id="container">
-	<div id="content-wrap">
-      <div id="placeholder-navbar"></div>
-      <div id="placeholder-hamburger"></div>
+	<div class="navbar" id="placeholder-navbar"></div>
+     <div id="placeholder-hamburger"></div>
+	
+	<div id="content-wrap" class="container">
+      
       <div id="welcome_info">
         <div class="content" id="first_content">
           <img id="happy_element" src="img/course.jpg" alt="happy">
