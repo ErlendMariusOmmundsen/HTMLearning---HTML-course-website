@@ -693,9 +693,6 @@ footer a:hover {
         width: 25%;
     }
     
-    .price, .upcoming{
-        display: none;
-    } 
 /****************** COURSE ******************/
     #info_box{
         display: block;
@@ -726,6 +723,11 @@ footer a:hover {
 
     #stuffs {
         height: 2900px;
+    }
+    
+    .price, .upcoming{
+        display: none;
+    } 
 }
 
 
