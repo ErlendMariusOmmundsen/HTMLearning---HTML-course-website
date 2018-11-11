@@ -603,7 +603,7 @@ footer a:hover {
     .caption-container, #nav_bar, #logo_element,
     #map,
     .row,
-    #info 
+    #info, 
     #picture_div {
         display: none;
     }
