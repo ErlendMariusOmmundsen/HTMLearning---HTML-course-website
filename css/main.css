@@ -674,6 +674,10 @@ footer a:hover {
 		float: none;
 		min-width: 300px;
     }
+/**************** LOGIN ****************/
+    .whitebox {
+      width: 90%;
+    }
 /**************** COURSES OVERVIEW ****************/
     .courses_box {
         float: none;
@@ -708,6 +712,19 @@ footer a:hover {
 @media screen and (max-width: 600px) {
     #nav_bar{
       display: none;
+    }
+/**************** LOGIN ****************/
+    .whitebox > p {
+        margin-left: 1em;
+        font-size: 140%;
+    }
+
+    .whitebox > form > input {
+      width: 70%;
+    }
+
+    .whitebox {
+      width: 90%;
     }
 
     #about_div{
